@@ -1,0 +1,247 @@
+---
+# this is an empty front matter
+---
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+<meta name="description" content="DEBS2021">
+<meta name="author" content="Emanuele Della Valle">
+
+
+<link rel="icon" href="https://2021.debs.org/img/favicon.ico">
+
+
+<title>DEBS 2021</title>
+
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+    <link rel="stylesheet" href="https://2021.debs.org/css/owl.carousel.css" />
+    <link rel="stylesheet" href="https://2021.debs.org/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://2021.debs.org/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://2021.debs.org/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://2021.debs.org/css/animate.css" />
+    <link rel="stylesheet" href="https://2021.debs.org/css/syntax.css" />
+    <link rel="stylesheet" href="https://2021.debs.org/css/venobox.css" />
+<!-- Main Stylesheet -->
+
+<link rel="stylesheet" href="https://2021.debs.org/css/style.min.css" integrity="" media="screen">
+
+
+
+<script src="https://2021.debs.org/js/jquery-1.10.2.min.js"></script>
+<script src="https://2021.debs.org/js/bootstrap.min.js"></script>
+<script src="https://2021.debs.org/js/owl.carousel.min.js"></script>
+<script src="https://2021.debs.org/js/plugins.js"></script>
+<script src="https://2021.debs.org/js/venobox.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://2021.debs.org/js/main.min.js"></script>
+
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+<style>
+	.owl-centered .owl-wrapper {
+			display: table !important;
+	}
+	.owl-centered .owl-wrapper .owl-item {
+			display: table-cell;
+			float: none;
+			vertical-align: middle;
+	}
+	.owl-centered .owl-wrapper .owl-item div {
+			text-align: center;
+		}
+	}
+</style>
+
+</head>
+<body>
+
+{% include header.html show_logo=0 %}
+
+<!-- Slider Start -->
+<section id="slider" style="background-image: url('https://www.fisi.polimi.it/artislab/foto/poli.png'),url('https://www.fisi.polimi.it/artislab/foto/poli.png');background-position: center;background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="block text-center">
+                    <h1 class="animated fadeInUp text-uppercase">DEBS 2021</h1>
+                    <p class="animated fadeInUp">15TH ACM INTERNATIONAL CONFERENCE ON DISTRIBUTED AND EVENT-BASED SYSTEMS</p>
+                    <p1 class="animated fadeInUp">{{ site.data.dates.conference_dates }}</p1><br><br>
+                    <p2 class="animated fadeInUp">Milan, Italy (Online Conference)</p2><br><br>
+                    <!--
+                    <a class="btn btn-main btn-solid-border" href="#scope" >Conference Information</a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+	
+<script>
+$(document).ready(function(){
+  
+  $("a").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+						<div style="margin-top:35px;">
+              <h3>Registration is now open. Futher information is available at the <a href="/conference-registration/">registration page</a>. Please also check the full program <a href="full-program/">here</a>.</h3>
+            </div>
+						<h2> About COVID-19 </h2>
+						<p align="justify" style="color:red;">Due to the current situation around COVID-19, the conference general chairs together with the program chairs and the DEBS Steering Committee have decided to hold DEBS 2021 as a fully virtual conference on the original dates. More details will be forthcoming.</p>
+						<p align="justify" style="color:red;">Regardless of this decision, full proceedings of all accepted papers will be produced and published in the ACM Digital Library. </p>
+
+						<h2>About DEBS</h2>
+            <p align="justify">Over the past decade, the ACM International Conference on Distributed and Event‐based Systems (DEBS) has become the premier venue for cutting-edge research in the field of event processing and distributed computing, and the integration of distributed and event-based systems in relevant domains such as Big Data, AI/ML, IoT, and Blockchain. The objectives of the ACM International Conference on Distributed and Event‐Based Systems (DEBS) are to provide a forum dedicated to the dissemination of original research, the discussion of practical insights, and the reporting of experiences relevant to distributed systems and event‐based computing. The conference aims at providing a forum for academia and industry to exchange ideas through its tutorials, research papers, and the Grand Challenge.</p>
+            
+						<p id="scope"></p>
+            <p></p>
+            <h2>TOPICS OF INTEREST</h2>
+            <p align="justify"><b>Models, architectures and paradigms</b>: Complex event processing, event-driven architectures, trustworthy event-based systems, real-time analytics, intelligent event processing, event processing in big and fast data, data stream processing, security and encryption in stream processing, complex event forecasting, in-network processing, logic-based complex event recognition, online relational learning, distributed event pattern learning, event correlation and pattern languages.</p>
+						
+						<p align="justify"><b>Systems and software</b>: Distributed data processing, distributed programming, federated event-based systems, AI/ML for event processing, information-centric networking, software-defined networking, security, reliability and resilience, distributed ledger and blockchains, programmable hardware, energy management and green computing as well as cloud, fog, ubiquitous and mobile computing.</p>
+						
+						<p align="justify"><b>Applications</b>: Use cases, requirements and applications of distributed and event-based systems in various domains including Internet-of-Things, life sciences, moving object applications, smart cities, cyber-physical systems, sensor networks, social networking, multimedia analytics, finance, healthcare and logistics, computer and network security, smart contracts and blockchains. Also, relevant topics span enterprise-level computing, including enterprise application integration, real-time enterprises, event-based business process management, and support for enterprises to respond in a timely fashion to changing situations.</p>
+						<p align="justify">Beyond the above topics, the DEBS 2021 research track will highlight the following focus areas: <b>machine learning for complex event processing, distributed and event-based systems for the COVID-19 pandemic</b>. The Conference Committee encourages submissions in these focus areas, and will highlight these in the conference in separate sessions. Submissions to the focus areas will be overseen by dedicated area chairs but reviewed according to the same standards and procedures as other DEBS Research paper submissions.</p>
+            <h2></h2>
+            <p align="justify"></p>
+            
+            <h2>General Co-Chairs</h2>
+            <p align="justify">
+            {% for chair in site.data.chairs.general_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {% include side.html %}
+
+    </div>
+  </div>
+</section>
+
+<section id="feature" style="background-image: url('https://2021.debs.org/img/campus.png'),url('https://2021.debs.org/img/campus.png');">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-0">
+      <h2 class="text-uppercase">Politecnico di Milano</h2>
+      <p align = "justify">
+      	The conference will be hosted by Politecnico di Milano, a scientific-technological university which trains engineers, architects and industrial designers. 
+
+        The University has always focused on the quality and innovation of its teaching and research, developing a fruitful relationship with business and productive world by means of experimental research and technological transfer.
+
+        Research has always been linked to didactics and it is a priority commitment which has allowed Politecnico Milano to achieve high quality results at an international level as to join the university to the business world. Research constitutes a parallel path to that formed by cooperation and alliances with the industrial system.
+      </p>
+      
+    </div>
+  </div>
+</div>
+</section>
+	
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel owl-centered">
+            <div class="col-xs-9"><img src="/img/clients/clients-logo1.jpg" class="col-md-12" alt="Features"></div>
+            
+            <div class="col-xs-9"><img src="/img/clients/clients-logo2.jpg" class="col-md-12" alt="Features"></div>
+            
+            <div class="col-xs-9"><img src="/img/clients/clients-logo3.png" class="col-md-12" alt="Features"></div>
+            
+            <div class="col-xs-9"><img src="/img/clients/clients-logo4.png" class="col-md-12" alt="Features"></div>
+            {% for sponsor in site.data.sponsors.gold_sponsors %}
+            <div class="col-xs-9"><img src="{{sponsor.logo}}" class="col-md-12" alt="{{sponsor.name}}"></div>
+            {% endfor %}
+						{% for sponsor in site.data.sponsors.silver_sponsors %}
+            <div class="col-xs-9"><img src="{{sponsor.logo}}" class="col-md-12" alt="{{sponsor.name}}"></div>
+						{% endfor %}
+						{% for sponsor in site.data.sponsors.bronze_sponsors %}
+            <div class="col-xs-9"><img src="{{sponsor.logo}}" class="col-md-12" alt="{{sponsor.name}}"></div>
+						{% endfor %}
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+          </ul>
+        </div>
+        <ul class="list-inline mb-20">
+          <li class="list-inline-item">Follow us:</li>
+          
+          <li class="list-inline-item"><a href="https://twitter.com/ACM_DEBS"><i class="fa fa-twitter"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.facebook.com/ACM.DEBS"><i class="fa fa-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.linkedin.com/groups/4747505/"><i class="fa fa-linkedin"></i></a></li>
+          
+        </ul>
+        <p><center>Copyright &copy; 2021 All rights reserved | Politecnico di Milano</center></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

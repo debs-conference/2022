@@ -1,0 +1,46 @@
+- firstname: Carlo
+  lastname: Curino
+  title: "Workload-Driven Systems Optimization: things are getting real!"
+  affiliation: Microsoft Gray Systems Lab
+  image: /img/speakers/speaker3.jpg
+  abstract: |-
+    In this talk, I will describe how workload-driven system optimization has quickly evolved from a researcher’s dream into a production reality. In particular, I will provide a high-level overview of a large collection of efforts that build upon careful telemetry collection and analysis to tune and optimize large-scale distributed systems in production at Microsoft.  While the opportunities are staggering (e.g., improving system efficiencies to the tune of 10s of millions of dollars per year), the challenges are equally daunting. I will discuss some of the ways we handle the challenges at MS and point at open problems along the way.
+  biography: |-
+    Carlo Curino is the lead of Gray Systems Lab (GSL). 
+    Before this Carlo was a Principal Scientist in Cloud and Information Services Lab (CISL), working on large-scale distributed systems, with a focus on scheduling for BigData clusters; this line of research was co-developed with several team members and open-sourced as part of Apache Hadoop/YARN.  Intrinsically, this research work enables us to operate the largest YARN clusters in the world (deployed on 250k + servers within Microsoft).<br/>
+    Prior to joining Microsoft was a Research Scientist at Yahoo!; primarily working entity deduplication and scale and mobile+cloud platforms.  Carlo spent two years as a Post Doc Associate at CSAIL MIT working with Prof. Samuel Madden and Prof. Hari Balakrishnan. At MIT he also served as the primary lecturer for the course on databases CS630, taught in collaboration with Mike Stonebraker.<br/>
+    Carlo received a Bachelor in Computer Science at Politecnico di Milano. He participated in a joint project between University of Illinois at Chicago (UIC) and Politecnico di Milano, obtaining a Master Degree in Computer Science at UIC and the Laurea Specialistica (cum laude) in Politecnico di Milano. During the PhD at Politecnico di Milano, Carlo spent two years as a visiting researcher at UCLA, working with Prof. Carlo Zaniolo (UCLA) and Prof Alin Deutsch (UCSD).<br/>
+    Research interests: ML-for-Systems and Systems-for-ML, large scale distributed systems, performance tuning, and scheduling.<br/>
+    Previous research work: mobile+cloud platforms, entity dedup at scale, relational databases and cloud computing, workload management and performance analysis, schema evolution, and temporal databases.
+  paper:
+    title: 'Workload-Driven Systems Optimization: Things are getting real'
+    authors: 'Carlo Curino'
+    doi: "https://doi.org/10.1145/3465480.3466918"
+- firstname: Yanlei
+  lastname: Diao
+  title: Proactive Monitoring on High-Volume Event Streams through Large-Scale Machine Learning
+  affiliation: Ecole Polytechnique &amp; University of Massachusetts Amherst
+  image: /img/speakers/speaker1.jpg
+  abstract: |-
+    Enterprise information systems are collecting large amounts of event log data from various sources such as databases, transaction logs, audit trails, system monitors, and application monitors. Timely analysis of such event log data has become critical to business operations. In this talk, I review the SASE and EXAD systems that we have built over the past 15 years&colon; The SASE system was designed for  passive monitoring, where users know their exact needs and express them in Complex Event Processing (CEP) queries. In contrast, EXAD (EXplainable Anomaly Detection) was designed for   proactive monitoring, where users cannot specify exactly what they are looking for, e.g., anomalous patterns in the data, and expect the system to automatically derive these patterns in a timely and human-interpretable manner. In particular, this talk focuses on the key techniques embodied in the EXAD system, including the integration of Deep Learning based anomaly detection and new explanation methods that can recover human-readable explanations for detected anomalies. This talk ends by outlining remaining research challenges in automated explainable anomaly detection, and future directions where prior CEP research may contribute to the new generation of machine learning-based stream analytics systems like EXAD.
+  biography: |-
+    Yanlei Diao is Professor of Computer Science at Ecole Polytechnique, France and the University of Massachusetts Amherst, USA. Her research interests lie in big data analytics and scalable intelligent information systems, with a focus on optimization in cloud data analytics, data stream analytics, explainable anomaly detection, interactive data exploration, and uncertain data management. She received her PhD in Computer Science from the University of California, Berkeley in 2005.<br/>
+    Prof. Diao was a recipient of the 2016 ERC Consolidator Award, 2013 CRA-W Borg Early Career Award (one female computer scientist selected each year for outstanding contributions), IBM Scalable Innovation Faculty Award, and NSF Career Award. She spoke at the Distinguished Faculty Lecture Series at the University of Texas at Austin and Technische Universitaet Darmstadt. She has served as Editor-in-Chief of the ACM SIGMOD Record, Associate Editor of ACM TODS, Chair of the ACM SIGMOD Research Highlight Award Committee, member of the SIGMOD and PVLDB Executive Committees, and member of the SIGMOD Award Committees. She was PC Co-Chair of IEEE ICDE 2017 and ACM SoCC 2016, and served on the organizing committees of SIGMOD, PVLDB, and CIDR, as well as on the program committees of many international conferences and workshops.
+  paper:
+    title: 'Explainable Anomaly Detection on High-Dimensional Time Series Data'
+    authors: 'Bijan Rad, Fei Song, Vincent Jacob, Yanlei Diao'
+    doi: "https://doi.org/10.1145/3465480.3468292"
+- firstname: Martin
+  lastname: Kleppmann
+  title: Event-based thinking in collaboration software
+  affiliation: University of Cambridge
+  image: /img/speakers/speaker2.jpg
+  abstract: |-
+    What do Google Docs and stream processing have in common? Both are centered around the idea of streams of events. In the case of Google Docs and other collaboration software, each event describes a change that a user has made to a document. Each user's local device has a copy of the shared document, and processing the stream of changes means updating this local copy so that it is consistent with all of the other users' copies of the document.<br/>
+    This talk will explore collaboration software through the lens of event-based thinking, explaining some of the algorithms that are used to implement this kind of software, such as Conflict-free Replicated Data Types (CRDTs). We will highlight new developments in this area, such as local-first software, and identify some open challenges in the area.
+  biography: |-
+    Martin Kleppmann is a research fellow at the University of Cambridge, and author of “Designing Data-Intensive Applications” (O’Reilly Media, 2017). He works on distributed algorithms, data systems, collaboration software, and security protocols. Previously he was a software engineer and entrepreneur at Internet companies including LinkedIn and Rapportive, where he worked on large-scale data infrastructure and stream processing.
+  paper:
+    title: 'Thinking in Events: From Databases to Distributed Collaboration Software'
+    authors: 'Martin Kleppmann'
+    doi: "https://doi.org/10.1145/3465480.3467835"
