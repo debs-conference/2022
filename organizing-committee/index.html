@@ -12,7 +12,6 @@
 
 <link rel="icon" href="https://2022.debs.org/img/favicon.ico">
 
-
 <title>ORGANIZING COMMITTEE</title>
 
 <meta name="generator" content="Hugo 0.55.5" />
@@ -28,8 +27,6 @@
 <!-- Main Stylesheet -->
 
 <link rel="stylesheet" href="https://2022.debs.org/css/style.min.css" integrity="" media="screen">
-
-
 
 <script src="https://2022.debs.org/js/jquery-1.10.2.min.js"></script>
 <script src="https://2022.debs.org/js/bootstrap.min.js"></script>
@@ -52,8 +49,6 @@
     ga('send', 'pageview');
 </script>
 
-
-
 </head>
 <body>
 
@@ -72,8 +67,6 @@
     </div>
 </section>
 
-
-
 <section id = "organizing-committee">
   <div class="container">
     <div class="row">
@@ -91,8 +84,6 @@
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
             {% endfor %}
             
-          
-            
             <h1>Industry Co-Chairs</h1>
             {% for chair in site.data.chairs.industry_chairs %}
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
@@ -102,7 +93,6 @@
             {% for chair in site.data.chairs.grand_challenge_chairs %}
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
             {% endfor %}
-
                         
             <h1>Tutorials/Workshop Co-Chairs</h1>
             {% for chair in site.data.chairs.tutorials_workshop_chairs %}
@@ -124,7 +114,7 @@
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
             {% endfor %}
             
-            <h1>Publicity</h1>
+            <h1>Publicity Chair</h1>
             {% for chair in site.data.chairs.publicity_chairs %}
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
             {% endfor %}

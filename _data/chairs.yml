@@ -1,15 +1,15 @@
 general_chairs:
-  - firstname: Yongluan
-    lastname: Zhou
-    institution: University of Copenhagen
+    - firstname: Yongluan
+      lastname: Zhou
+      institution: University of Copenhagen
 
 pc_chairs:
     - firstname: Panos 
-    lastname: Chrysanthis, 
-    institution: University of Pittsburgh
+      lastname: Chrysanthis, 
+      institution: University of Pittsburgh
     - firstname: Vincenzo 
-    lastname: Gulisano, 
-    institution: Chalmers University of Technology
+      lastname: Gulisano, 
+      institution: Chalmers University of Technology
 
 
 pc_members_research:
@@ -20,35 +20,35 @@ pc_members_industry:
 
 industry_chairs:
     - firstname: Valeria 
-    lastname: Cardellini, 
-    institution: University of Rome Tor Vergata
+      lastname: Cardellini, 
+      institution: University of Rome Tor Vergata
     - firstname: Zbigniew 
-    lastname: Jerzak, 
-    institution: Zalando SE
+      lastname: Jerzak, 
+      institution: Zalando SE
 
 
 grand_challenge_chairs:
     - firstname: Sebastian 
-    lastname: Frischbier, 
-    institution: Infront Finance Group
+      lastname: Frischbier, 
+      institution: Infront Finance Group
     - firstname: Ruben 
-    lastname: Mayer, 
-    institution: TU Munich
+      lastname: Mayer, 
+      institution: TU Munich
     - firstname: Jawad 
-    lastname: Tahir, 
-    institution: TU Munich
+      lastname: Tahir, 
+      institution: TU Munich
     - firstname: Christoph 
-    lastname: Doblander, 
-    institution: Microsoft
+      lastname: Doblander, 
+      institution: Microsoft
 
 
 tutorials_workshop_chairs:
     - firstname: Paris 
-    lastname: Carbone, 
-    institution: KTH
+      lastname: Carbone, 
+      institution: KTH
     - firstname: Danh 
-    lastname: Le Phuoc, 
-    institution: TU Berlin
+      lastname: Le Phuoc, 
+      institution: TU Berlin
 
 
 doctoral_symposium_chairs:
@@ -82,9 +82,9 @@ diversity_chairs:
 
 
 publicity_chairs:
-   - firstname: Zsolt 
-     lastname: István, 
-     institution: TU Darmstadt
+    - firstname: Zsolt 
+      lastname: István, 
+      institution: TU Darmstadt
 
 proceeding_chairs:
    - firstname: Eleni 
@@ -92,6 +92,6 @@ proceeding_chairs:
      institution: TU Berlin
   
 web_chairs:
-  - firstname: Rodrigo
-    lastname: Laigner
-    institution: University of Copenhagen
+    - firstname: Rodrigo
+      lastname: Laigner
+      institution: University of Copenhagen
