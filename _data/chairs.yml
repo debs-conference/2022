@@ -5,10 +5,10 @@ general_chairs:
 
 pc_chairs:
     - firstname: Panos 
-      lastname: Chrysanthis, 
+      lastname: Chrysanthis
       institution: University of Pittsburgh
     - firstname: Vincenzo 
-      lastname: Gulisano, 
+      lastname: Gulisano
       institution: Chalmers University of Technology
 
 
@@ -20,43 +20,43 @@ pc_members_industry:
 
 industry_chairs:
     - firstname: Valeria 
-      lastname: Cardellini, 
+      lastname: Cardellini
       institution: University of Rome Tor Vergata
     - firstname: Zbigniew 
-      lastname: Jerzak, 
+      lastname: Jerzak
       institution: Zalando SE
 
 
 grand_challenge_chairs:
     - firstname: Sebastian 
-      lastname: Frischbier, 
+      lastname: Frischbier
       institution: Infront Finance Group
     - firstname: Ruben 
-      lastname: Mayer, 
+      lastname: Mayer
       institution: TU Munich
     - firstname: Jawad 
-      lastname: Tahir, 
+      lastname: Tahir
       institution: TU Munich
     - firstname: Christoph 
-      lastname: Doblander, 
+      lastname: Doblander
       institution: Microsoft
 
 
 tutorials_workshop_chairs:
     - firstname: Paris 
-      lastname: Carbone, 
+      lastname: Carbone
       institution: KTH
     - firstname: Danh 
-      lastname: Le Phuoc, 
+      lastname: Le Phuoc
       institution: TU Berlin
 
 
 doctoral_symposium_chairs:
     - firstname: David 
-      lastname: Eyers, 
+      lastname: Eyers
       institution: University of Otago
     - firstname: Genoveva 
-      lastname: Vargas-Solar, 
+      lastname: Vargas-Solar
       institution: CNRS
 
 
@@ -65,30 +65,30 @@ pc_members_poster_demo:
 
 poster_demo_chairs:
     - firstname: Daniele 
-      lastname: Dell’Aglio, 
+      lastname: Dell’Aglio
       institution: Aalborg University
     - firstname: Asterios 
-      lastname: Katsifodimos, 
+      lastname: Katsifodimos
       institution: TU Delft
 
 
 diversity_chairs:
     - firstname: Vana 
-      lastname: Kalogeraki, 
+      lastname: Kalogeraki
       institution: Athens University of Economics and Business
     - firstname: Panos 
-      lastname: Chrysanthis, 
+      lastname: Chrysanthis
       institution: University of Pittsburgh
 
 
 publicity_chairs:
     - firstname: Zsolt 
-      lastname: István, 
+      lastname: István
       institution: TU Darmstadt
 
 proceeding_chairs:
    - firstname: Eleni 
-     lastname: Tzirita Zacharatou, 
+     lastname: Tzirita Zacharatou
      institution: TU Berlin
   
 web_chairs:
