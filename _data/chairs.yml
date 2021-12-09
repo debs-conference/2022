@@ -1,35 +1,97 @@
 general_chairs:
-  
+  - firstname: Yongluan
+    lastname: Zhou
+    institution: University of Copenhagen
 
 pc_chairs:
-  
+    - firstname: Panos 
+    lastname: Chrysanthis, 
+    institution: University of Pittsburgh
+    - firstname: Vincenzo 
+    lastname: Gulisano, 
+    institution: Chalmers University of Technology
+
 
 pc_members_research:
-  
+
 
 pc_members_industry:
-  
+
 
 industry_chairs:
-  
+    - firstname: Valeria 
+    lastname: Cardellini, 
+    institution: University of Rome Tor Vergata
+    - firstname: Zbigniew 
+    lastname: Jerzak, 
+    institution: Zalando SE
+
 
 grand_challenge_chairs:
-  
+    - firstname: Sebastian 
+    lastname: Frischbier, 
+    institution: Infront Finance Group
+    - firstname: Ruben 
+    lastname: Mayer, 
+    institution: TU Munich
+    - firstname: Jawad 
+    lastname: Tahir, 
+    institution: TU Munich
+    - firstname: Christoph 
+    lastname: Doblander, 
+    institution: Microsoft
+
 
 tutorials_workshop_chairs:
-  
+    - firstname: Paris 
+    lastname: Carbone, 
+    institution: KTH
+    - firstname: Danh 
+    lastname: Le Phuoc, 
+    institution: TU Berlin
+
 
 doctoral_symposium_chairs:
-  
+    - firstname: David 
+      lastname: Eyers, 
+      institution: University of Otago
+    - firstname: Genoveva 
+      lastname: Vargas-Solar, 
+      institution: CNRS
+
 
 pc_members_poster_demo:
  
 
 poster_demo_chairs:
- 
+    - firstname: Daniele 
+      lastname: Dell’Aglio, 
+      institution: Aalborg University
+    - firstname: Asterios 
+      lastname: Katsifodimos, 
+      institution: TU Delft
 
-publicity_web_chairs:
-  
+
+diversity_chairs:
+    - firstname: Vana 
+      lastname: Kalogeraki, 
+      institution: Athens University of Economics and Business
+    - firstname: Panos 
+      lastname: Chrysanthis, 
+      institution: University of Pittsburgh
+
+
+publicity_chairs:
+   - firstname: Zsolt 
+     lastname: István, 
+     institution: TU Darmstadt
 
 proceeding_chairs:
+   - firstname: Eleni 
+     lastname: Tzirita Zacharatou, 
+     institution: TU Berlin
   
+web_chairs:
+  - firstname: Rodrigo
+    lastname: Laigner
+    institution: University of Copenhagen

@@ -10,12 +10,6 @@
 <meta name="description" content="Organizing committee">
 <meta name="author" content="Sardar">
 
-
-
-
-
-
-
 <link rel="icon" href="https://2022.debs.org/img/favicon.ico">
 
 
@@ -124,14 +118,24 @@
             {% for chair in site.data.chairs.poster_demo_chairs %}
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
             {% endfor %}
+			
+			<h1>Diversity Co-Chairs</h1>
+            {% for chair in site.data.chairs.diversity_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
             
-            <h1>Publicity and Web Co-Chairs</h1>
-            {% for chair in site.data.chairs.publicity_web_chairs %}
+            <h1>Publicity</h1>
+            {% for chair in site.data.chairs.publicity_chairs %}
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
             {% endfor %}
             
             <h1>Proceeding Chair</h1>
             {% for chair in site.data.chairs.proceeding_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
+			
+			<h1>Web Chair</h1>
+            {% for chair in site.data.chairs.web_chairs %}
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
             {% endfor %}
             
