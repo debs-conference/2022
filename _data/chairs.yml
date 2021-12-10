@@ -39,7 +39,7 @@ grand_challenge_chairs:
       institution: TU Munich
     - firstname: Christoph 
       lastname: Doblander
-      institution: Microsoft
+      institution: TU Munich
 
 
 tutorials_workshop_chairs:
@@ -85,6 +85,9 @@ publicity_chairs:
     - firstname: Zsolt 
       lastname: István
       institution: TU Darmstadt
+    - firstname: Dimitrios 
+      lastname: Georgakopoulos 
+      institution: Swinburne University of Technology
 
 proceeding_chairs:
    - firstname: Eleni 
