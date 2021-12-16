@@ -27,7 +27,10 @@ industry_chairs:
 grand_challenge_chairs:
     - firstname: Sebastian 
       lastname: Frischbier
-      institution: Infront Finance Group
+      institution: Infront Financial Technology GmbH (part of Infront group)
+     - firstname: Arne
+      lastname: Hormann
+      institution: Infront Quant AG (part of Infront group)
     - firstname: Ruben 
       lastname: Mayer
       institution: TU Munich
