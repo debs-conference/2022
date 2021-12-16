@@ -1,4 +1,4 @@
-general_chairs:
+general_chairs: 
     - firstname: Yongluan
       lastname: Zhou
       institution: University of Copenhagen
@@ -12,23 +12,23 @@ pc_chairs:
       institution: Chalmers University of Technology
 
 
-pc_members_research:
+pc_members_research: 
 
 
-pc_members_industry:
+pc_members_industry: 
 
 
-industry_chairs:
+industry_chairs: 
     - firstname: Valeria 
       lastname: Cardellini
       institution: University of Rome Tor Vergata
 
 
-grand_challenge_chairs:
+grand_challenge_chairs: 
     - firstname: Sebastian 
       lastname: Frischbier
       institution: Infront Financial Technology GmbH (part of Infront group)
-     - firstname: Arne
+    - firstname: Arne
       lastname: Hormann
       institution: Infront Quant AG (part of Infront group)
     - firstname: Ruben 
@@ -42,7 +42,7 @@ grand_challenge_chairs:
       institution: TU Munich
 
 
-tutorials_workshop_chairs:
+tutorials_workshop_chairs: 
     - firstname: Paris 
       lastname: Carbone
       institution: KTH
@@ -51,7 +51,7 @@ tutorials_workshop_chairs:
       institution: TU Berlin
 
 
-doctoral_symposium_chairs:
+doctoral_symposium_chairs: 
     - firstname: David 
       lastname: Eyers
       institution: University of Otago
@@ -60,10 +60,10 @@ doctoral_symposium_chairs:
       institution: CNRS
 
 
-pc_members_poster_demo:
+pc_members_poster_demo: 
  
 
-poster_demo_chairs:
+poster_demo_chairs: 
     - firstname: Daniele 
       lastname: Dell’Aglio
       institution: Aalborg University
@@ -72,7 +72,7 @@ poster_demo_chairs:
       institution: TU Delft
 
 
-diversity_chairs:
+diversity_chairs: 
     - firstname: Vana 
       lastname: Kalogeraki
       institution: Athens University of Economics and Business
@@ -81,7 +81,7 @@ diversity_chairs:
       institution: University of Pittsburgh
 
 
-publicity_chairs:
+publicity_chairs: 
     - firstname: Zsolt 
       lastname: István
       institution: TU Darmstadt
@@ -89,12 +89,12 @@ publicity_chairs:
       lastname: Georgakopoulos 
       institution: Swinburne University of Technology
 
-proceeding_chairs:
+proceeding_chairs: 
    - firstname: Eleni 
      lastname: Tzirita Zacharatou
      institution: TU Berlin
   
-web_chairs:
+web_chairs: 
     - firstname: Rodrigo
       lastname: Laigner
       institution: University of Copenhagen
