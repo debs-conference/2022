@@ -74,24 +74,237 @@
         <div class="block">
           <div>
             <h1>Call for Grand Challenge Solutions</h1>
-            <p align="justify">The DEBS Grand Challenge is a series of competitions that started in 2010, in which both participants from academia and industry compete with the goal of building faster and more scalable distributed and event-based systems that solve a practical problem. Every year, the DEBS Grand Challenge participants have a chance to explore a new data set and a new problem and can compare their results based on common evaluation criteria. The winners of the challenge are announced during the conference where they are competing for a performance and an audience award. Apart from correctness and performance, submitted solutions are also judged along a set of non-functional requirements to assess their practicability.</p>
+            <p align="justify">The DEBS Grand Challenge is a series of competitions that started in 2010, in which both participants from academia and industry compete with the goal of building faster and more scalable distributed and event-based systems that solve a practical problem. Every year, the DEBS Grand Challenge participants have a chance to explore a new data set and a new problem and can compare their results based on the common evaluation criteria. The winners of the challenge are announced during the conference where they are competing for a performance and an audience award. Apart from correctness and performance, submitted solutions are also assessed along a set of non-functional requirements.</p>
 		  </div>
 			
 			
 		  <div>
-            <h1>Detecting Trading Trends in Real Financial Tick Data</h1>
+            <h1>Topic: Technical Analysis of Market Data</h1>
 			
-			<p>The 2022 DEBS Grand Challenge focuses on real-time complex event processing of real-world high-volume tick data provided by Infront Financial Technology. In the data set, about 5000+ financial instruments are being traded on three major exchanges over the course of a week. The goal of the challenge is to efficiently compute specific trend indicators and detect patterns resembling those used by real-life traders to decide on buying or selling on the financial markets.</p>
+			<p align="justify">The 2022 DEBS Grand Challenge focuses on real-time complex event processing of real-world high-volume tick data provided by Infront Financial Technology (<a href="https://www.infrontfinance.com/"> https://www.infrontfinance.com/</a>). In the data set, about 5000+ financial instruments are being traded on three major exchanges over the course of a week. The goal of the challenge is to efficiently compute specific trend indicators and detect patterns resembling those used by real-life traders to decide on buying or selling on the financial markets.</p>
 			
-			<p>Further details on the data set provided, the queries, non-functional requirements and the overall submission process can be found here: <a href="https://2022.debs.org/call-for-grand-challenge-solutions/">https://2022.debs.org/call-for-grand-challenge-solutions/</a>.</p>
+			<p align="justify">Further details on the data set provided, the queries, non-functional requirements and the overall submission process can be found here: <a href="https://2022.debs.org/call-for-grand-challenge-solutions/">https://2022.debs.org/call-for-grand-challenge-solutions/</a>.</p>
 			
           </div>
 		  
           <div>
             <h1>Participation</h1>
-            <p align="justify">Participation in the DEBS 2022 Grand Challenge consists of three steps: (1) registration, (2) iterative solution submission, and (3) paper submission. The first step is to pre-register your submission by 
-		     registering at your abstract at the EasyChair conference management system  (<a href="https://easychair.org/my/conference?conf=debs2022">https://easychair.org/my/conference?conf=debs2022</a>) in the "Grand Challenge Track" and send an e-mail to one of the Grand Challenge Co-Chairs (see <a href="https://2022.debs.org/organizing-committee/">https://2022.debs.org/organizing-committee/</a>). Solutions to the challenge, once developed, must be submitted to the evaluation platform in order to get it benchmarked in the challenge. The evaluation platform provides detailed feedback on performance and allows to update the solution in an iterative process. A solution can be continuously improved until the challenge closing date. Evaluation results of the last submitted solution will be used for the final performance ranking. The last step is to upload a short paper (minimum 2 pages, maximum 6 pages) describing the final solution to the EasyChair system (a link will be provided at a later point in time). All papers will be reviewed by the DEBS Grand Challenge Committee to assess the merit and originality of submitted solutions. All solutions of sufficient quality will be presented during the poster session at the DEBS 2022 conference.</p>
+            <p align="justify">Participation in the DEBS 2022 Grand Challenge consists of three steps: (1) registration, (2) iterative solution submission, and (3) paper submission.</p>
+
+			<p align="justify">The first step is to pre-register your submission by registering your abstract at Microsoft CMT (https://cmt3.research.microsoft.com/DEBS2022/ ) in the "Grand Challenge Track'' and send an email to one of the Grand Challenge Co-Chairs (see https://2022.debs.org/organizing-committee/ or the eval platform landing page). Solutions to the challenge, once developed, must be submitted to the evaluation platform (https://challenge.msrg.in.tum.de/) in order to get it benchmarked in the challenge. The evaluation platform provides detailed feedback on performance and allows to update the solution in an iterative process. A solution can be continuously improved until the challenge closing date. Evaluation results of the last submitted solution will be used for the final performance ranking. The last step is to upload a short paper (minimum 2 pages, maximum 6 pages) describing the final solution via the central conference management tool CMT. All papers will be reviewed by the DEBS Grand Challenge Committee to assess the merit and originality of submitted solutions. All solutions of sufficient quality will be presented during the poster session at the DEBS 2022 conference.
+			 </p>
           </div>
+		  
+		  <div>
+            <h1>Query</h1>
+            <p align="justify">This year’s DEBS Grand Challenge requires you to implement a basic trading strategy as it is used by intraday traders in real life. The strategy aims at (a) identifying trends in price movements for individual equities using event aggregation over tumbling windows (Query 1) and (2) triggering buy/sell advises using complex event processing upon detecting specific patterns (Query 2).
+			 </p>
+			 
+			<h2>Background: Market Data and Quantitative Indicators</h2>
+			 <p align="justify">
+			 Trading on financial markets is fueled by precise real time event data together with reliable background information about financial instruments such as equities, indices or funds. The high-volume streams of event notifications reporting demand (ask), supply (bid), made trades (last) and other metadata are called market data.  Nowadays, the overall amount of events published by the various exchanges and  processed by technical solution providers like Infront Financial Technology (part of Infront group) is constantly increasing on a daily basis. For example, in 2019 Infront had been processing an average of 18 billion event notifications per day while in 2021 the daily average has already increased to 24 billion event notifications (c.f., https://www.springerprofessional.de/en/managing-the-complexity-of-processing-financial-data-at-scale-an/17436062 / https://arxiv.org/abs/1908.03206).
+			 </p>
+			 
+			 <p align="justify">
+			 Leaving aside the special case of algorithmic trading, market data is provided to users at different levels of quality of information (QoI) depending on their subscription; quality attributes in this context refer primarily to granularity, timeliness and completeness, ranging from fine-granular tick data to end of day aggregations.
+Traders, analysts, and other stakeholders utilize market data in interactive decision support systems called market data terminals to identify investment opportunities for specific sets of symbols they are interested in. The Infront Professional Terminal (IPT) as shown in Fig. 1 is a good example of such a terminal solution that fuses market data with metadata, news, interactive analytics, advanced visualization, and direct trading functionality. 
+			 </p>
+			 
+			 <!-- INSERT FIGURE!!! -->
+			  <p align="justify">
+				<figure>
+				  <img src="Picture1.png" alt="">
+				  <figcaption>Figure 1: Example screen of a professional terminal solution (Infront Professional Terminal).</figcaption>
+				</figure> 
+			 </p>
+		  
+			  <p align="justify">
+			  Besides fundamental analysis, tracking and evaluating quantitative indicators is a widely-used approach by modern traders to identify trends in the development of an instrument’s price early on. Trends can be both upwards (i.e., prices increase) or downwards (i.e., prices start to drop). Identifying the start of an uptrend is crucial to be able to buy while the price is still low and to sell as soon as a downtrend begins (ideally: before it starts).
+			  </p>
+			  
+			  <h2>Important Definitions and Relaxations</h2>
+			  
+			  
+			  <p align="justify">
+			  For the remainder of this exercise, we define the following terms and relaxations to allow you to focus on the actual engineering aspects of the Grand Challenge:
+			  </p>
+			  
+			  <p align="justify">Definitions</p>
+			  
+			  <div>
+				<li>Any instrument is identified by an identifier consisting of a unique string together with the exchange code of the exchange that the instrument is being traded on; this identifier is furthermore referred to as a symbol.</li>
+				<li>For example, RDSA.NL is the symbol for Royal Dutch Shell traded on the Amsterdam exchange (https://live.euronext.com/product/equities/GB00B03MLX29-XAMS/quotes)</li>
+				<li>All event notifications have to be grouped based on their symbol</li>
+				<li>Consequently, all further definitions are per symbol</li>
+			  </div>
+			  
+			  <p align="justify"></p>
+			  <p align="justify">Relaxations</p>
+			  
+			  <div>
+				<li>We will pre-filter all events for you so your solution will receive only event notifications that contain pricing information per symbol</li>
+				<li>You need to constantly calculate all metrics for all symbols but only provide updates for a specific set of symbols that we have subscribed to (see below)</li>
+				<li>All calculations are based on events grouped into windows of 5 minutes’ length</li>
+				<li>Windows do not overlap (tumbling)</li>
+				<li>A window cannot be evaluated before the next window starts</li>
+			  </div>
+			  
+			  <p align="justify"></p>
+			  <p align="justify">Formats</p>
+			  
+			  <div>
+				  <li>All event notifications are time-stamped with a global CEST timestamp in the format HH:MM:ss.ssss</li>
+				  <li>All attributes that contain price information are in the format ###.###### (six digits)</li>
+				  <li>All attributes that contain date information are in the format dd-mm-yyyyyyy</li>
+			  </div>
+				
+				<h2>Query 1: Quantitative Indicators Per Symbol</h2>
+				
+				<p align="justify">The first query defines one of the most essential indicators per symbol used in technical analysis to identify trends: the exponential moving average (EMA).</p>
+				
+				<!-- TODO put figure -->
+				<p align="justify">
+					<figure>
+					  <img src="Picture2.png" alt="">
+					</figure> 
+				</p>
+				
+				<h2>Query 2: Breakout Patterns via Crossovers</h2>
+				
+				<p align="justify">The quantitative indicators of query 1 will now be put to use in query 2: by tracking two exponential moving averages per symbol computed over different intervals we will be able to identify breakout patterns.</p>
+				
+				<h3>Breakout Patterns</h3>
+				
+				<p align="justify">Generally, breakout patterns describe meaningful changes in the development of a price that indicate the start of a trend (even if only temporary). Bullish breakout, if the price is starting to rise (aka breaking through the support area from below) and a bearish breakout if the price is going to lose steadily (aka breaking though the resistance area from above). </p>
+				
+				<p align="justify">Properly identifying such changes and their nature in a timely manner allows a trader to monetize this knowledge by immediately buying (in case of a bullish breakout) or selling (in case of a bearish breakout) to maximize revenue.</p>
+
+				<!-- figure -->
+				<p align="justify">
+					<figure>
+					  <img src="Picture3.png" alt="">
+					  <figcaption>Example: price for RDS A (https://live.euronext.com/product/equities/GB00B03MLX29-XAMS/quotes) plotted against the EMA(38) (green) and the EMA(100) (orange) showing at least three crossings that trigger buy/sell advice.</figcaption>
+					</figure> 
+				</p>
+				
+				<h3>Bullish Breakout Pattern: Buy Advice</h3>
+				
+				<p align="justify">Generally, we detect a bullish breakout pattern for a symbol once the EMA with the shorter interval j1 starts to overtake the EMA with a longer interval j2. In this case, a buy advice event must be created immediately so that a trader can still benefit from a relatively low price.</p>
+				<p align="justify">For long intervals of j1=50 days and j2=100 days this crossover is specifically called a golden cross to indicate a golden opportunity for long-term investments. </p>
+				<p align="justify">For this challenge, we use a granularity of minutes by setting j1=38 and j2=100 and create a buy advice event upon detecting a bullish breakout as illustrated in the following figure and formalised as follows:</p>
+
+				<!-- figure -->
+				<p align="justify">
+					<figure>
+					  <img src="Picture4.png" alt="">
+					</figure>
+					<figure>
+					  <img src="Picture5.png" alt="">
+					</figure> 
+				</p>
+				
+				<h3>Bearish Breakout Pattern: Sell Advice</h3>
+				
+				<p align="justify">Generally, we detect a bearish breakout pattern for a symbol once the EMA with the longer interval j2 starts to overtake the EMA with a shorter interval j1. In this case, a sell advice event must be created immediately so that a trader can still sell at a relatively high price. </p>
+				
+				<p align="justify">Conversely to the golden cross described earlier, a bearish pattern for j1=50 days and j2=100 days is specifically called a death cross. 
+				As for the bullish pattern, we use a granularity of minutes by setting j1=38 and j2=100 and create a sell advice event upon detecting a bearish breakout as illustrated in the figure below and formally defined as follows.</p>
+
+				<!-- figure -->
+				<p align="justify">
+					<figure>
+					  <img src="Picture6.png" alt="">
+					</figure>
+					<figure>
+					  <img src="Picture7.png" alt="">
+					</figure> 
+				</p>
+
+				<h2>Responses Expected for Performance Evaluation</h2>
+				
+				<p align="justify">Verifying the correctness of your solution and competitively benchmarking will be done automatically by our central evaluation platform.</p>
+				
+				<h3>The Challenger Evaluation Platform</h3>
+
+				<p align="justify">
+				We provide a gRPC based API for the challenge. The documentation and example code is up on the challenge platform. Also a dashboard is available.</p>
+				<p align="justify">Send us an e-mail and we will grant you access to the platform. The platform is reachable under http://challenge.msrg.in.tum.de. Additionally, you can find further documentation and example code there to get started.</p>
+				<p align="justify">In the context of the evaluation we mimic the usual behaviour of traders when using market terminal solutions: they subscribe to individual sets of symbols that they want to track and get informed about threats and opportunities (e.g., buy and sell advice events).</p>
+
+				<h3>Subscriptions for Symbols</h3>
+				
+				<p align="justify">With every batch of events that is pushed to your solution you will receive a list of symbols that the eval platform subscribes to. This subscription is valid until it is updated (i.e., the current set of symbols is replaced with a new one). We will dynamically change the subscriptions.</p>
+				<p align="justify">As responses for query 1 we expect per batch the latest EMA(38) and EMA(100) for each symbol that our eval platform has subscribed to.</p>
+				<p align="justify">As responses for query 2 we expect per batch the last 3 crossovers (buy/sell) advises (with timestamps) for each symbol that we have subscribed to.</p>
+				<p align="justify">Consequently, you need to keep track of all symbols with their EMAs and crossovers to properly reply to our subscriptions.</p>
+
+				<h2>Bonus: Smart Visualisation</h2>
+				
+				<p align="justify">
+				Whether humans in the loop can fully exploit a decision support system for trading does not only depend on the correctness and performance of its implementation; being able to visually cut through the noise and emphasize visually what is relevant to the user is almost as important.</p>
+
+				<p align="justify">Hence: try to find a smart way to visualize the results of the queries as a bonus! Be aware that participants for the Grand Challenge do also compete for the audience award -- and well-made visualisation adds magic to every solution.</p>
+				
+		  </div>
+		  
+		  <div>
+            <h1>Data Set Provided</h1>
+            <p align="justify">
+			The data provided for this Grand Challenge is based on real tick data captured by Infront Financial Technology GmbH for the complete week of November 8th to 14th, 2021 (i.e., five trading days Monday to Friday + Saturday and Sunday).
+			</p>
+			
+			<p align="justify">
+			The DEBS 2022 Grand Challenge Data Set “Trading Data” and its derived (smaller) test data set are both licensed under a Creative Commons Attribution - NonCommercial - ShareAlike 4.0 International License (http://creativecommons.org/licenses/by-nc-sa/4.0/) . By downloading and using this data you agree to the terms and conditions of the licensing agreement.</p>
+			
+			<p align="justify">The data set contains 289 million tick data events covering 5504 equities and indices that are traded on three European exchanges: Paris (FR), Amsterdam (NL), and Frankfurt/Xetra (ETR).  All tick data events for security types equities (e.g., Royal Dutch Shell, Siemens Healthineers) and indices are contained as they have been captured on these days. However, some event notifications appear to come with no payload. This is due to the fact that this challenge requires only a small subset of attributes to be evaluated; other attributes have been eliminated from the data set to minimize its overall size while keeping the amount of events to process unchanged.</p>
+
+			<p align="justify">The full data set will be used for benchmarking the submitted solutions and published here for download after the submission deadline of the DEBS 2022 Grand Challenge. </p>
+			
+			<p align="justify">The smaller test data set will be provided up front via our eval platform for testing purposes under the same license as the full data set. The test data set contains the first million event notifications that are relevant for the Grand Challenge queries. Consequently, participants must not pay attention to filtering out event notifications that do not contain attributes relevant to the Grand Challenge.</p>
+			
+			<p align="justify">The attributes used in events in the data set are shown in Table 1; the attributes directly relevant for the Grand Challenge are marked in column three. Timestamps are in the format HH:MM:SS.ssss, dates DD-MM-YYYY, prices ##.#### (six digits).</p>
+			
+			
+			<!-- table -->
+			 {% include attr_table.html %}
+			 
+			<p align="justify"></p>
+			<p align="justify">The events are provided through a GRPC based API:</p>
+			
+			<!-- code -->
+			<pre><code>message Event {
+  string symbol = 1;
+  SecType sectype = 2;
+  float lasttradeprice = 3;
+  google.protobuf.Timestamp lastUpdate = 4;
+  google.protobuf.Timestamp lastTrade = 5;
+}</code></pre>
+			
+			<p align="justify">Additional clarifications to queries will be provided here: https://challenge.msrg.in.tum.de/documentation</p>
+			
+		  </div>
+		  
+		  <div>
+            <h1>Awards and Selection Process</h1>
+			<p align="justify">Participants of the challenge compete for two awards: (1) the performance award and (2) the audience award. The winner of the performance award will be determined through the automated evaluation platform (see above), according to the evaluation criteria specified below. Evaluation criteria measure the speed and correctness of submitted solutions. The winner of the audience award will be determined amongst the finalists who present in the Grand Challenge session of the DEBS conference. In this session, the audience will be asked to vote for the solution with the most interesting concepts. The solution with the highest number of votes wins. The intention of the audience award is to highlight the qualities of the solutions that are not tied to performance. Specifically, the audience and challenge participants are encouraged to consider not only the functional correctness but also the practicability of the solution.</p>
+		
+			<p align="justify">Regarding the practicability of a solution, we want to encourage participants to push beyond solving a problem correctly only in the functional sense. Instead, the aim is to provide a reusable and extensible solution that is of value beyond this year’s Grand Challenge alone. In particular, we will reward those solutions that adhere to a list of non-functional requirements (see this document). These requirements are driven by industry use cases and scenarios, so that we make sure solutions are applicable in practical settings.</p>
+			
+			<p align="justify">Thus, every submission will be evaluated for how it addresses our non-functional requirements in its design and implementation while assuming that all submitted solutions strive for maximum performance. In this regard, we distinguish between hard and soft non-functional requirements.</p>
+
+			<li>Hard criteria are must-haves that have to be addressed in the design and must be implemented; while </li>
+			<li>Soft criteria do not necessarily have to be implemented but must be covered in the submission's description</li>
+
+			<p align="justify">Examples for hard criteria are: Configurability, Scalability (horizontal scalability is preferred), operational reliability/resilience, accessibility of the solution's source code, integration with standard (tools/protocols), documentation.</p>
+                 
+			<p align="justify">Examples for soft criteria are: Security measures implemented / addressed, deployment support, portability / maintainability, support of special hardware (e.g., FPGAs, GPUs, SDNs,...).</p>
+			
+			<p align="justify">In order to achieve all non-functional requirements, we want to encourage participants to build their solution not from scratch, but instead consider the widely-used industry-strength open-source platforms like those curated by recognized Open Source foundations (https://opensource.com/resources/organizations). We promote these platforms not only because they already have a diverse user base and ecosystem, but because most of them already solve non-functional requirements that are paramount for a use in practice.</p>
+           
+			<p align="justify">There are two ways for teams to become finalists and get a presentation slot in the Grand Challenge session during the DEBS Conference: (1) up to two teams with the best performance (according to the final evaluation) will be nominated; (2) the Grand Challenge Program Committee will review submitted papers for each solution and nominate up to two teams with the most novel concepts. All submissions of sufficient quality that do not make it to the finals will get a chance to be presented at the DEBS conference as posters. The quality of the submissions will be determined based on the review process performed by the DEBS Grand Challenge Program Committee. In the review process, the non-functional requirements will receive special attention. Furthermore, participants are committed to present details on which non-functional requirements are indeed implemented and to what level of sophistication in their presentation slot. The audience will be encouraged to pay special attention to these details when making their votes for the best solution.
+			</p>
+		  </div>	
+		  
 		  
           <div style="margin-bottom: 100px;" align = "justify">
             <h1>Important Dates (Tentative)</h1>
@@ -108,7 +321,9 @@
             
           </div>
 
-
+          <div align = "justify">
+			About Infront. Infront innovates flexible financial market solutions to help financial professionals find the information they’re looking for to make more informed decisions – faster, easier, smarter. In addition to portfolio management solutions, Infront offers a powerful combination of global market data, news, analytics and trading together with integrated solutions for data feeds, advisory, and regulatory compliance and calculations. https://www.infrontfinance.com
+          </div>
 
         </div>
       </div>
