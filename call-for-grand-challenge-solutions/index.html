@@ -91,8 +91,7 @@
             <h1>Participation</h1>
             <p align="justify">Participation in the DEBS 2022 Grand Challenge consists of three steps: (1) registration, (2) iterative solution submission, and (3) paper submission.</p>
 
-			<p align="justify">The first step is to pre-register your submission by registering your abstract at Microsoft CMT (<a href="https://cmt3.research.microsoft.com/DEBS2022/">https://cmt3.research.microsoft.com/DEBS2022/</a>) in the "Grand Challenge Track'' and send an email to one of the Grand Challenge Co-Chairs (see <a href="https://2022.debs.org/organizing-committee/">https://2022.debs.org/organizing-committee/</a> or the eval platform landing page). Solutions to the challenge, once developed, must be submitted to the evaluation platform (<a href="https://challenge.msrg.in.tum.de/">https://challenge.msrg.in.tum.de/</a>) in order to get it benchmarked in the challenge. The evaluation platform provides detailed feedback on performance and allows to update the solution in an iterative process. A solution can be continuously improved until the challenge closing date. Evaluation results of the last submitted solution will be used for the final performance ranking. The last step is to upload a short paper (minimum 2 pages, maximum 6 pages) describing the final solution via the central conference management tool CMT. All papers will be reviewed by the DEBS Grand Challenge Committee to assess the merit and originality of submitted solutions. All solutions of sufficient quality will be presented during the poster session at the DEBS 2022 conference.
-			 </p>
+			<p align="justify">The first step is to pre-register your submission by registering your abstract at Microsoft CMT (<a href="https://cmt3.research.microsoft.com/DEBS2022/">https://cmt3.research.microsoft.com/DEBS2022/</a>) in the "Grand Challenge Track'' and send an email to one of the Grand Challenge Co-Chairs (see <a href="https://2022.debs.org/organizing-committee/">https://2022.debs.org/organizing-committee/</a> or the eval platform landing page). Solutions to the challenge, once developed, must be submitted to the evaluation platform (<a href="https://challenge.msrg.in.tum.de/">https://challenge.msrg.in.tum.de/</a>) in order to get it benchmarked in the challenge. The evaluation platform provides detailed feedback on performance and allows to update the solution in an iterative process. A solution can be continuously improved until the challenge closing date. Evaluation results of the last submitted solution will be used for the final performance ranking. The last step is to upload a short paper (minimum 2 pages, maximum 6 pages) describing the final solution via the central conference management tool CMT. All papers will be reviewed by the DEBS Grand Challenge Committee to assess the merit and originality of submitted solutions. All solutions of sufficient quality will be presented during the poster session at the DEBS 2022 conference.</p>
           </div>
 		  
 		  <div>
@@ -143,8 +142,8 @@
 			  <div>
 				<li>We will pre-filter all events for you so your solution will receive only event notifications that contain pricing information per symbol</li>
 				<li>You need to constantly calculate all metrics for all symbols but only provide updates for a specific set of symbols that we have subscribed to (see below)</li>
-				<li>All calculations are based on events grouped into windows of 5 minutes’ length</li>
-				<li>Windows do not overlap (tumbling)</li>
+				<li>All calculations are based on events grouped into windows of <b>5 minutes</b>’ length</li>
+				<li>Windows <b>do not overlap</b> (tumbling)</li>
 				<li>A window cannot be evaluated before the next window starts</li>
 			  </div>
 			  
@@ -159,7 +158,7 @@
 				
 				<h2>Query 1: Quantitative Indicators Per Symbol</h2>
 				
-				<p align="justify">The first query defines one of the most essential indicators per symbol used in technical analysis to identify trends: the exponential moving average (EMA).</p>
+				<p align="justify">The first query defines one of the most essential indicators per symbol used in technical analysis to identify trends: the <b>exponential moving average (EMA)</b>.</p>
 				
 				<!-- TODO put figure -->
 				<p align="justify">
@@ -190,7 +189,7 @@
 				
 				<p align="justify">Generally, we detect a bullish breakout pattern for a symbol once the EMA with the shorter interval j1 starts to overtake the EMA with a longer interval j2. In this case, a buy advice event must be created immediately so that a trader can still benefit from a relatively low price.</p>
 				<p align="justify">For long intervals of j1=50 days and j2=100 days this crossover is specifically called a golden cross to indicate a golden opportunity for long-term investments. </p>
-				<p align="justify">For this challenge, we use a granularity of minutes by setting j1=38 and j2=100 and create a buy advice event upon detecting a bullish breakout as illustrated in the following figure and formalised as follows:</p>
+				<p align="justify">For this challenge, we use a granularity of minutes by setting j1=38 and j2=100 and create a buy advice event upon detecting a bullish breakout as illustrated in the following figure and formalized as follows:</p>
 
 				<!-- figure -->
 				<p align="justify">
@@ -228,7 +227,7 @@
 				<p align="justify">
 				We provide a gRPC based API for the challenge. The documentation and example code is up on the challenge platform. Also a dashboard is available.</p>
 				<p align="justify">Send us an e-mail and we will grant you access to the platform. The platform is reachable under <a href="http://challenge.msrg.in.tum.de">http://challenge.msrg.in.tum.de</a>. Additionally, you can find further documentation and example code there to get started.</p>
-				<p align="justify">In the context of the evaluation we mimic the usual behaviour of traders when using market terminal solutions: they subscribe to individual sets of symbols that they want to track and get informed about threats and opportunities (e.g., buy and sell advice events).</p>
+				<p align="justify">In the context of the evaluation we mimic the usual behavior of traders when using market terminal solutions: they subscribe to individual sets of symbols that they want to track and get informed about threats and opportunities (e.g., buy and sell advice events).</p>
 
 				<h3>Subscriptions for Symbols</h3>
 				
@@ -237,7 +236,7 @@
 				<p align="justify">As responses for query 2 we expect per batch the last 3 crossovers (buy/sell) advises (with timestamps) for each symbol that we have subscribed to.</p>
 				<p align="justify">Consequently, you need to keep track of all symbols with their EMAs and crossovers to properly reply to our subscriptions.</p>
 
-				<h2>Bonus: Smart Visualisation</h2>
+				<h2>Bonus: Smart Visualization</h2>
 				
 				<p align="justify">
 				Whether humans in the loop can fully exploit a decision support system for trading does not only depend on the correctness and performance of its implementation; being able to visually cut through the noise and emphasize visually what is relevant to the user is almost as important.</p>
@@ -253,11 +252,11 @@
 			</p>
 			
 			<p align="justify">
-			The DEBS 2022 Grand Challenge Data Set “Trading Data” and its derived (smaller) test data set are both licensed under a Creative Commons Attribution - NonCommercial - ShareAlike 4.0 International License (<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">http://creativecommons.org/licenses/by-nc-sa/4.0/</a>) . By downloading and using this data you agree to the terms and conditions of the licensing agreement.</p>
+			<b>The DEBS 2022 Grand Challenge Data Set “Trading Data” and its derived (smaller) test data set are both licensed under a Creative Commons Attribution - NonCommercial - ShareAlike 4.0 International License (<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">http://creativecommons.org/licenses/by-nc-sa/4.0/</a>) . By downloading and using this data you agree to the terms and conditions of the licensing agreement.</b></p>
 			
 			<p align="justify">The data set contains 289 million tick data events covering 5504 equities and indices that are traded on three European exchanges: Paris (FR), Amsterdam (NL), and Frankfurt/Xetra (ETR).  All tick data events for security types equities (e.g., Royal Dutch Shell, Siemens Healthineers) and indices are contained as they have been captured on these days. However, some event notifications appear to come with no payload. This is due to the fact that this challenge requires only a small subset of attributes to be evaluated; other attributes have been eliminated from the data set to minimize its overall size while keeping the amount of events to process unchanged.</p>
 
-			<p align="justify">The full data set will be used for benchmarking the submitted solutions and published here for download after the submission deadline of the DEBS 2022 Grand Challenge. </p>
+			<p align="justify"><b>The full data set will be used for benchmarking the submitted solutions and published here for download after the submission deadline of the DEBS 2022 Grand Challenge.</b></p>
 			
 			<p align="justify">The smaller test data set will be provided up front via our eval platform for testing purposes under the same license as the full data set. The test data set contains the first million event notifications that are relevant for the Grand Challenge queries. Consequently, participants must not pay attention to filtering out event notifications that do not contain attributes relevant to the Grand Challenge.</p>
 			
@@ -291,8 +290,8 @@
 			
 			<p align="justify">Thus, every submission will be evaluated for how it addresses our non-functional requirements in its design and implementation while assuming that all submitted solutions strive for maximum performance. In this regard, we distinguish between hard and soft non-functional requirements.</p>
 
-			<li>Hard criteria are must-haves that have to be addressed in the design and must be implemented; while </li>
-			<li>Soft criteria do not necessarily have to be implemented but must be covered in the submission's description</li>
+			<li><b>Hard</b> criteria are must-haves that have to be addressed in the design and must be implemented; while </li>
+			<li><b>Soft</b> criteria do not necessarily have to be implemented but must be covered in the submission's description</li>
 
 			<p align="justify">Examples for hard criteria are: Configurability, Scalability (horizontal scalability is preferred), operational reliability/resilience, accessibility of the solution's source code, integration with standard (tools/protocols), documentation.</p>
                  
@@ -312,6 +311,13 @@
             <li>Deadline for uploading final solution to the evaluation platform <b> April 5th 2022</b></li>
             <li>Deadline for short paper submission <b> April 19th 2022</b></li>
             <li>Conference <b> June 27th – July 1st, 2022</b></li>
+          </div>
+		  
+		   <div style="margin-bottom: 100px;" align="justify">
+            <h1>Grand Challenge Co-Chairs</h1>
+            {% for chair in site.data.chairs.grand_challenge_chairs %}
+              <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
+            {% endfor %}
           </div>
 
           <div align = "justify">
