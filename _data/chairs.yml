@@ -157,6 +157,9 @@ pc_members_research:
     - firstname: Qiong
       lastname: Luo
       institution: Hong Kong University of Science and Technology
+    - firstname: Riccardo
+      lastname: Tommasini
+      institution: University of INSA Lyon, France
     - firstname: Roman
       lastname: Vitenberg
       institution: University of Oslo
