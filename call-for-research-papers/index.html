@@ -51,7 +51,7 @@
 </head>
 <body>
 
-{% include header.html show_logo=0 %}
+{% include header.html show_logo=1 %}
 		
 <section id="global-header" style="background-image: url('https://imagens.viajonarios.com.br/2016/11/Nyhavn-Copenhagen.jpg'),url('https://imagens.viajonarios.com.br/2016/11/Nyhavn-Copenhagen.jpg');">
     <div class="container">
@@ -183,6 +183,39 @@
       </div>
       {% include side.html %}
 
+    </div>
+  </div>
+</section>
+
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel owl-centered">
+		  
+		  <!--
+            <div class="col-xs-9"><img src="/img/clients/clients-logo1.jpg" class="col-md-12" alt="Features"></div>
+
+            <div class="col-xs-9"><img src="/img/clients/clients-logo2.jpg" class="col-md-12" alt="Features"></div>
+
+            <div class="col-xs-9"><img src="/img/clients/clients-logo3.png" class="col-md-12" alt="Features"></div>
+
+            <div class="col-xs-9"><img src="/img/clients/clients-logo4.png" class="col-md-12" alt="Features"></div>
+		  -->	
+            {% for sponsor in site.data.sponsors.gold_sponsors %}
+            <div class="col-xs-9"><img src="{{sponsor.logo}}" class="col-md-12" alt="{{sponsor.name}}"></div>
+            {% endfor %}
+			{% for sponsor in site.data.sponsors.silver_sponsors %}
+            <div class="col-xs-9"><img src="{{sponsor.logo}}" class="col-md-12" alt="{{sponsor.name}}"></div>
+			{% endfor %}
+			{% for sponsor in site.data.sponsors.bronze_sponsors %}
+            <div class="col-xs-9"><img src="{{sponsor.logo}}" class="col-md-12" alt="{{sponsor.name}}"></div>
+			{% endfor %}
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
