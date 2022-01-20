@@ -125,56 +125,58 @@
              <!-- <p align="justify">If you are interested in any of the above opportunities for supporting the DEBS 2022 conference, please contact <a href="mailto:alessandro.margara@polimi.it">Alessandro Margara</a>.</p> -->
           </div>
 		  
-		  <!--
+		  
 		  {% if site.data.sponsors.gold_sponsors %}
           <div class="row">
-						<div class="col-md-12">
-							<h1>Gold Sponsor</h1>
-							<div class="row">
-								{% for sponsor in site.data.sponsors.gold_sponsors %}
-								<div class="col-xs-4">
-									<div style="margin-top: 30px; margin-left" class="row">
-										<a href="{{sponsor.link}}" target = _blank><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12"></a>
-									</div>
-								</div>
-								{% endfor %}
+				<div class="col-md-12">
+					<h1>Gold Sponsor</h1>
+					<div class="row">
+						{% for sponsor in site.data.sponsors.gold_sponsors %}
+						<div class="col-xs-4">
+							<div style="margin-top: 30px; margin-left" class="row">
+								<a href="{{sponsor.link}}" target = _blank><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12"></a>
 							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+		  </div>
+		  {% endif %}
+					
+		  {% if site.data.sponsors.silver_sponsors %}
+		  <div class="row">
+			<div class="col-md-12">
+				<h1>Silver Sponsor</h1>
+				<div class="row">
+					{% for sponsor in site.data.sponsors.silver_sponsors %}
+					<div class="col-xs-2">
+						<div style="margin-top: 30px; margin-left" class="row">
+							<a href="{{sponsor.link}}" target = _blank style="margin-bottom: 100px;"><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12"></a>
 						</div>
 					</div>
-					{% endif %}
-					{% if site.data.sponsors.silver_sponsors %}
-					<div class="row">
-						<div class="col-md-12">
-							<h1>Silver Sponsor</h1>
-							<div class="row">
-								{% for sponsor in site.data.sponsors.silver_sponsors %}
-								<div class="col-xs-2">
-									<div style="margin-top: 30px; margin-left" class="row">
-										<a href="{{sponsor.link}}" target = _blank style="margin-bottom: 100px;"><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12"></a>
-									</div>
-								</div>
-								{% endfor %}
-							</div>
-						</div>
-          </div>
-					{% endif %}
-					{% if site.data.sponsors.bronze_sponsors %}
-					<div class="row">
-						<div class="col-md-12">
-							<h1>Bronze Sponsor</h1>
-							<div class="row">
-								{% for sponsor in site.data.sponsors.bronze_sponsors %}
-								<div class="col-xs-1">
-									<div style="margin-top: 30px; margin-left" class="row">
-										<a href="{{sponsor.link}}" target = _blank style="margin-bottom: 100px;"><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12"></a>
-									</div>
-								</div>
-								{% endfor %}
-							</div>
-						</div>
+					{% endfor %}
+				</div>
+			</div>
           </div>
 		  {% endif %}
-		  -->
+					
+		  {% if site.data.sponsors.bronze_sponsors %}
+		   <div class="row">
+				<div class="col-md-12">
+					<h1>Bronze Sponsor</h1>
+					<div class="row">
+						{% for sponsor in site.data.sponsors.bronze_sponsors %}
+						<div class="col-xs-1">
+							<div style="margin-top: 30px; margin-left" class="row">
+								<a href="{{sponsor.link}}" target = _blank style="margin-bottom: 100px;"><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12"></a>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+           </div>
+		  {% endif %}
+		  
         </div>
       </div>
 	  
