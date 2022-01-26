@@ -219,7 +219,9 @@ industry_chairs:
     - firstname: Valeria 
       lastname: Cardellini
       institution: University of Rome Tor Vergata
-
+    - firstname: Yingjun 
+      lastname: Wu
+      institution: Singularity Data, Inc.
 
 grand_challenge_chairs: 
     - firstname: Sebastian 
