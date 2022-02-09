@@ -7,3 +7,8 @@ silver_sponsors:
     link: https://www.singularity-data.com/
     logo: /img/clients/singularity.png
     sidebar: true
+bronze_sponsors:
+  - name: Infront Financial Technology GmbH
+    link: https://www.infrontfinance.com
+    logo: /img/clients/infront.png
+    sidebar: true
