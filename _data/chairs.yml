@@ -213,7 +213,30 @@ pc_members_research:
       institution: Purdue University
 
 pc_members_industry: 
-
+    - firstname: Zainab
+      lastname: Abbas
+      institution: Kry, Sweden
+    - firstname: Bogdan
+      lastname: Ghit
+      institution: Databricks, USA
+    - firstname: Jiong
+      lastname: He
+      institution: ByteDance, Singapore
+    - firstname: Matteo
+      lastname: Nardelli
+      institution: Bank of Italy, Italy
+    - firstname: Sabri
+      lastname: Skhiri
+      institution: EURA NOVA, Belgium    
+    - firstname: Guozhang
+      lastname: Wang
+      institution: Confluent, USA       
+    - firstname: Steffen
+      lastname: Zeuch
+      institution: DFKI and TU Berlin, Germany
+    - firstname: Shuhao
+      lastname: Zhang
+      institution: SUTD, Singapore
 
 industry_chairs: 
     - firstname: Valeria 
