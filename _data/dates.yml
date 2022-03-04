@@ -2,7 +2,8 @@ conference_dates: 27th June &ndash; 1st July 2022
 conference_dates_calls: June 27th &ndash; July 1st, 2022
 
 abstract_submission:
-    current: March 4th, 2022  
+    old: March 4th, 2022
+    current: March 14th, 2022
 
 tutorial_proposal_submission:
     current: April 15th, 2022
@@ -11,7 +12,8 @@ tutorial_proposal_author_notification:
     current: April 29th, 2022
 
 research_submission:
-    current: March 11th, 2022
+    old: March 11th, 2022
+    current: March 21st, 2022
     
 research_author_notification:
     current: May 6th, 2022
