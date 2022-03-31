@@ -237,6 +237,9 @@ pc_members_industry:
     - firstname: Shuhao
       lastname: Zhang
       institution: SUTD, Singapore
+    - firstname: Stefano 
+      lastname: Iannucci
+      institution: Roma Tre University, Italy
 
 industry_chairs: 
     - firstname: Valeria 
