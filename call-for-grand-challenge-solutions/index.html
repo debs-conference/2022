@@ -303,9 +303,15 @@
           <div style="margin-bottom: 100px;" align="justify">
             <h1>Important Dates (Tentative)</h1>
             <li>Release of the challenge, initial data set <b>December 21th, 2021</b></li>
-            <li>Notification of acceptance <b>May 3rd, 2022</b></li>
-            <li>Deadline for uploading final solution to the evaluation platform <b> April 5th 2022</b></li>
-            <li>Deadline for short paper submission <b> April 19th 2022</b></li>
+            <li>Notification of acceptance <b>
+				{% if site.data.dates.grand_challenge_author_notification.old!="" %}<del>{{site.data.dates.grand_challenge_author_notification.old}}</del> {% endif %}{% if site.data.dates.grand_challenge_author_notification.current %}{{site.data.dates.grand_challenge_author_notification.current}}{% else %}tba{% endif %}
+			</b></li>
+            <li>Deadline for uploading final solution to the evaluation platform <b> 
+				{% if site.data.dates.grand_challenge_upload_code.old!="" %}<del>{{site.data.dates.grand_challenge_upload_code.old}}</del> {% endif %}{% if site.data.dates.grand_challenge_upload_code.current %}{{site.data.dates.grand_challenge_upload_code.current}}{% else %}tba{% endif %}
+			</b></li>
+            <li>Deadline for short paper submission <b> 
+				{% if site.data.dates.grand_challenge_submission.old!="" %}<del>{{site.data.dates.grand_challenge_submission.old}}</del> {% endif %}{% if site.data.dates.grand_challenge_submission.current %}{{site.data.dates.grand_challenge_submission.current}}{% else %}tba{% endif %}
+			</b></li>
             <li>Conference <b> June 27th – July 1st, 2022</b></li>
           </div>
 		  
