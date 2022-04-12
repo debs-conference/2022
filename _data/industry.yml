@@ -1,11 +1,10 @@
-- firstname: 
-  lastname: 
-  title: 
-  affiliation_img: 
-  image: 
+- firstname: Dimitrios
+  lastname: Georgakopoulos
+  title: Advances in Industry 4.0 and the Industrial Internet of Things
+  affiliation_img: /img/keynotes/dimitrios.jpg
   abstract: |-
     
-  biography: |-
+  biography: Prof. Dimitrios Georgakopoulos is the Director of Swinburne University of Technology’s Key IoT Lab and Industry 4.0 Program Leader. Before that he was Research Director at CSIRO’s ICT Centre and Professor at RMIT. Dimitrios has also held research and management positions in several industrial labs in the USA, including Telcordia Technologies (where he helped found Telcordia’s research laboratories in Austin, Texas and Poznan, Poland), Microelectronics and Computer Corporation, GTE (now Verizon) Laboratories, and Bell Communications Research. Dimitrios has authored 200 articles, and his publications have received approximately 20,000 citations. He is ranked by Microsoft Academic as one of the Top Authors in the fields of the Internet of Things (2013-2022), Context Awareness (1990-2021), Middleware (1990-2021), and Workflow (1993-2002). According to Elsevier’s Science-wide author databases of standardized citation indicators (August 2021 data update), I am in the 2% of top-cited authors (top 1%, if self-citations are not considered). He has led major multidisciplinary research initiatives in digital manufacturing, precision agriculture, human services, water management, and defense; won more than twenty research awards; and attracted significant personal research funding ($60.5M+) from both industry and government in the USA, EU, and Australia.
     
   paper:
     doi: 
