@@ -10,12 +10,6 @@
 <meta name="description" content="Support">
 <meta name="author" content="Sardar">
 
-
-
-
-
-
-
 <link rel="icon" href="https://2022.debs.org/img/favicon.ico">
 
 
@@ -149,7 +143,7 @@
 				<h1>Silver Sponsor</h1>
 				<div class="row">
 					{% for sponsor in site.data.sponsors.silver_sponsors %}
-					<div class="col-xs-2">
+					<div class="col-xs-3">
 						<div style="margin-top: 30px; margin-left" class="row">
 							<a href="{{sponsor.link}}" target = _blank style="margin-bottom: 100px;"><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12"></a>
 						</div>
@@ -166,7 +160,7 @@
 					<h1>Bronze Sponsor</h1>
 					<div class="row">
 						{% for sponsor in site.data.sponsors.bronze_sponsors %}
-						<div class="col-xs-1">
+						<div class="col-xs-2">
 							<div style="margin-top: 30px; margin-left" class="row">
 								<a href="{{sponsor.link}}" target = _blank style="margin-bottom: 100px;"><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12"></a>
 							</div>
