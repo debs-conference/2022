@@ -86,14 +86,15 @@
 											<p style="color: #655E7A; font-size:30px;"><b>{{industry.firstname}} {{industry.lastname}}</b></p>
 											{% if industry.affiliation_img != nil %}
 											<img src={{industry.affiliation_img}} width=50% height="auto" style="margin-bottom: 25px">
-                      {% else %}
-											<p style="font-size:20px;"><b>{{industry.affiliation}}</b></p>
 											{% endif %}
 
                       
-                      {% if industry.affiliation_img1 != nil %}
-                        <img src={{industry.affiliation_img1}} width=50% height="auto" style="margin-bottom: 25px">
-                        <img src={{industry.affiliation_img2}} width=50% height="auto" style="margin-bottom: 25px">
+                      {% if industry.affiliation_img0 != nil %}
+                        <img src={{industry.affiliation_img0}} width=25% height="auto" style="margin-bottom: 25px">
+                        <img src={{industry.affiliation_img1}} width=25% height="auto" style="margin-bottom: 25px">
+                        <img src={{industry.affiliation_img2}} width=25% height="auto" style="margin-bottom: 25px">
+                      {% else %}
+											  <p style="font-size:20px;"><b>{{industry.affiliation}}</b></p>
                       {% endif %} 
                       
 
