@@ -320,7 +320,7 @@
             <li>Deadline for short paper submission <b> 
 				{% if site.data.dates.grand_challenge_submission.old!="" %}<del>{{site.data.dates.grand_challenge_submission.old}}</del> {% endif %}{% if site.data.dates.grand_challenge_submission.current %}{{site.data.dates.grand_challenge_submission.current}}{% else %}tba{% endif %}
 			</b></li>
-            <li>Conference <b> June 27th – July 1st, 2022</b></li>
+            <li>Conference <b> {% if site.data.dates.conference_dates_calls!="" %}<del>{{site.data.dates.conference_dates_calls}}</del> {% endif %} </li>
           </div>
 		  
 		   <div style="margin-bottom: 100px;" align="justify">
