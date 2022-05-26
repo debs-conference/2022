@@ -12,9 +12,9 @@ default_text:
   - type: "empty"
     text: ""
 dates:
-  - start_slot: 0      # ？？
-    duration_slot: 4   # 表示竖着占了几行
-    day: 0             # 表示第几列
+  - start_slot: 0
+    duration_slot: 4
+    day: 0
     name: "Tutorial 1"
     text: "Machine Learning over Static and Dynamic Relational Data"
     authors: "Ahmet Kara, Milos Nikolic, Dan Olteanu, Haozhe Zhang"
