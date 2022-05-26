@@ -1,4 +1,4 @@
-start_date: "28.06.2021"
+start_date: "27.06.2022"
 duration: 4
 start_time: "08:30"
 end_time: "17:00"
@@ -14,45 +14,263 @@ default_text:
   - type: "empty"
     text: ""
 dates:
+  # 1st day
   - start_slot: 0
-    duration_slot: 1
+    duration_slot: 2
     day: 0
     type: "reg"
-  - start_slot: 1
+
+  - start_slot: 2
     duration_slot: 2
     day: 0
     type: "ceremony"
     text: "Opening Ceremony"
-  - start_slot: 2
+
+  - start_slot: 4
     duration_slot: 4
     day: 0
-    name: "Tutorial"
-    text: ""
-    authors: ""
     type: "tutorial"
+    name: "Tutorial"
+    text: "Unifying Model ... 1"
+    authors: ""
     chair: ""
     doi: ""
-  - start_slot: 4
-    duration_slot: 1
+
+  - start_slot: 8
+    duration_slot: 2
     day: 0
     type: "break"
-  - start_slot: 2
+
+  - start_slot: 10
     duration_slot: 4
     day: 0
-    name: "Tutorial"
-    text: ""
-    authors: ""
     type: "tutorial"
+    name: "Tutorial"
+    text: "Unifying Model ... 2"
+    authors: ""
     chair: ""
     doi: ""
+
+  - start_slot: 14
+    duration_slot: 4
+    day: 0
+    type: "lunch"
+
+  - start_slot: 18
+    duration_slot: 4
+    day: 0
+    type: "keynote"
+    name: "Keynote"
+    chair: "Frank"
+    keynote_index: 0
+  
+  - start_slot: 22
+    duration_slot: 4
+    day: 0
+    type: "panel"
+    name: "Panel"
+    text: "Advances in Industry 4.0 and the Industrial Internet of Things"
+
+  - start_slot: 26
+    duration_slot: 2
+    day: 0
+    type: "break"
+
+  - start_slot: 28
+    duration_slot: 6
+    day: 0
+    type: "posters"
+    name: "Demo"
+    text: "(with short presentation round + breakout rooms)"
+
+  # 2nd day
+  - start_slot: 0
+    duration_slot: 2
+    day: 1
+    type: "reg"
+
+  - start_slot: 2
+    duration_slot: 3
+    day: 1
+    type: "tutorial"
+    name: "Tutorial"
+    text: ""
+
+  - start_slot: 5
+    duration_slot: 4
+    day: 1
+    tytpe: "research"
+    name: "Research Session 1"
+
   - start_slot: 9
+    duration_slot: 2
+    day: 1
+    type: "break"
+
+  - start_slot: 11
+    duration_slot: 4
+    day: 1
+    type: "panel"
+    name: "Panel"
+    text: "Climate Change and Computing Facts, Perspectives and an Open Discussion"
+
+  - start_slot: 15
     duration_slot: 3
     day: 1
     type: "lunch"
+
+  - start_slot: 18
+    duration_slot: 4
+    day: 1
+    type: "keynote"
+    name: "Keynote"
+    text: "What do the Souurces Say/ Integrating Highly Haterogeneous Journalistic Data Sources"
+
+  - start_slot: 22
+    duration_slot: 2
+    day: 1
+    type: "break"
+
+  - start_slot: 24
+    duration_slot: 6
+    day: 1
+    type: ""  # phd forum / talk??
+    text: "Ph.D. forum / talk"
+
+  - start_slot: 30
+    duration_slot: 7
+    day: 1
+    type: "" # 3min pre for all
+    text: "3 minuutes presentations for all entries"
+
+  - start_slot: 37
+    duration_slot: # ??
+    day: 1
+    type: ""   # receptions and posters
+    text: "Reception and posters"
+
+  # 3rd day
+  - start_slot: 0
+    duration_slot: 2
+    day: 2
+    type: "reg"
+
   - start_slot: 2
     duration_slot: 4
     day: 2
-    name: "Keynote 1"
+    type: "research"
+    name: "Research Session 2"
+
+  - start_slot: 6
+    duration_slot: 2
+    day: 2
+    type: "break"
+
+  - start_slot: 8
+    duration_slot: 4
+    day: 2
+    type: "research"
+    name: "Research Session 3"
+
+  - start_slot: 12
+    duration_slot: 2
+    day: 2
+    type: ""  # sponsor session
+    text: "Session from sponsors"
+
+  - start_slot: 14
+    duration_slot: 4
+    day: 2
+    type: "lunch"
+
+  - start_slot: 18
+    duration_slot: 7
+    day: 2
+    type: ""   # grand challenge
+    text: "Grand Challenge"
+
+  - start_slot: 25
+    duration_slot: 2
+    day: 2
+    type: "break"
+
+  - start_slot: 27
+    duration_slot: 3
+    day: 2
+    type: "tutorial"
+    name: "Tutotrial"
+
+  - start_slot: 30
+    duration_slot: 4
+    day: 2
     type: "keynote"
-    chair: "Nesime Tatbul"
-    keynote_index: 1
+    name: "Keynote"
+    text: "I'm SO Glad I'm Uncoordinated!"
+
+  - start_slot: 34
+    duration_slot: 2
+    day: 2
+    type: "break"
+
+  - start_slot: 36
+    duration_slot: # ??
+    day: 2
+    type: ""  # dinner
+    text: "Dinner"
+
+  # 4th day
+  - start_slot: 0
+    duration_slot: 2
+    day: 3
+    type: "reg"
+
+  - start_slot: 2
+    duration_slot: 3
+    day: 3
+    type: ""  # test of time ceremony
+    text: "Test of time Ceremony"
+
+  - start_slot: 5
+    duration_slot: 2
+    day: 3
+    type: ""   # award
+    text: "Award Ceremony"
+
+  - start_slot: 7
+    duration_slot: 2
+    day: 3
+    type: "break"
+
+  - start_slot: 9
+    duration_slot: 4
+    day: 3
+    type: "industry"
+    name: "Industry Session 1"
+
+  - start_slot: 13
+    duration_slot: 4
+    day: 3
+    type: "lunch"
+
+  - start_slot: 17
+    duration_slot: 4
+    day: 3
+    type: "keynote"
+    name: "Keynote"
+
+  - start_slot: 21
+    duration_slot: 2
+    day: 3
+    type: "break"
+
+  - start_slot: 23
+    duration_slot: 3
+    day: 3
+    type: "tutorial"
+    name: "Tutorial"
+
+  - start_slot: 26
+    duration_slot: 4
+    day: 3
+    type: ""  # business meeting
+    text: "business meeting and closing remarks"
