@@ -1,0 +1,33 @@
+- firstname: Alessandro 
+  lastname: Margara
+  title: A Unifying Model for Distributed Data-Intensive Systems
+  affiliation: Politecnico di Milano Italy
+  abstract: Modern applications handle increasingly larger volumes of data, generated at an unprecedented and constantly growing pace. They introduce challenges that are transforming all research fields that gravitate around data management and processing, resulting in a blooming of distributed data-intensive systems. Each data-intensive system comes with its specific assumptions, data and processing model, design choices, implementation strategies, and guarantees. Yet, the problems data-intensive systems face and the solutions they propose are frequently overlapping. This tutorial presents a unifying model for data-intensive systems that dissects them into core building blocks, enabling a precise and unambiguous description and a detailed comparison. We show a list of classification criteria that derive from the model and we use them to build a taxonomy of state-of-the-art systems. The tutorial aims to offer a global view of the vast research field of data-intensive systems, highlight interesting observations on the current state of things, and suggest promising research directions.
+    
+  biography: Alessandro Margara is associate professor at Politecnico di Milano. He obtained his PhD from Politecnico di Milano and worked as a post- doctoral researcher at the Vrije Universiteit (VU) Amsterdam and Università della Svizzera italiana (USI). Alessandro’s research interests are in the area of software engineering and distributed systems. his research focuses on defining abstractions and building systems to simplify the design, development, and operation of complex distributed applications. Alessandro is a long-term member of the DEBS community and a regular member of the DEBS Program Committee. His DEBS 2010 paper received the DEBS 2020 Test of Time award. His DEBS 2014 paper received the Best Paper award. Alessandro was DEBS 2021 General Co-Chair. Alessandro has already presented two tutorials in DEBS 2011 and in DEBS 2016. Both tutorials had a similar goal and format as the proposed one. They were presenting a model and classification of heterogeneous software systems.
+
+- firstname: Jim 
+  lastname: Dowling
+  title: Hopsworks Feature Store
+  affiliation: KTH Royal Institute of Technology
+  abstract: TBA
+    
+  biography: TBA
+
+- firstname: Alexander 
+  lastname: Artikis
+  title: Formal Models of Complex Event Recognition
+  affiliation: University of Piraeus
+  abstract: Complex Event Recognition (CER) refers to the activity of detecting patterns in streams of continuously arriving “event” data over (geographically) distributed sources. CER is a key ingredient of many contemporary Big Data applications that require the processing of such event streams in order to obtain timely insights and implement reactive and proactive measures. Examples of such applications include the recognition of attacks in computer network nodes, human activities on video content, emerging stories and trends on the Social Web, traffic and transport incidents in smart cities, error conditions in smart energy grids, violations of maritime regulations, cardiac arrhythmias and epidemic spread. In each application, CER allows to make sense of streaming data, react accordingly, and prepare for counter-measures. In this tutorial, we will present the formal methods for CER, as they have been developed in the artificial intelligence community. To illustrate the reviewed approaches, we will use the domain of maritime situational awareness.
+    
+  biography: Alexander Artikis is an Associate Professor at the University of Piraeus (GR), and a Research Associate at NCSR Demokritos, leading the complex event recognition group1. He holds a PhD from Imperial College London on Multi-Agent Systems, while his research interests lie in the area of Artificial Intelligence. He has published over 100 papers in related journals and conferences. Alexander has been developing complex event processing techniques in the context of several EU-funded Big Data projects, and he was the scientific coordinator in some of them. He has given tutorials on complex event processing in IJCAI, KR, VLDB and ECAI. In 2020, he co-organised the Dagstuhl seminar on the “Foundations of Composite Event Recognition”.
+    
+
+
+- firstname: Jorge Arnulfo Quiane 
+  lastname: Ruiz
+  title: Apache Wayang
+  affiliation: TU Berlin and Databloom AI
+  abstract: TBA
+
+  biography: TBA   
