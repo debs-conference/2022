@@ -114,6 +114,39 @@
 							</div>
 							{% endfor %}
 						</div>
+
+            {% for tutorial in site.data.di_talks %}
+							<div id="{{keynote.lastname}}" class="col-md-12" style="margin-top: -100px; padding-top: 100px">
+								<div>
+									<div>
+										<div class="col-md-3 mb-10">
+											<img src={{tutorial.image}} width=100% height="auto">
+										</div>
+									</div>
+									<div class="col-md-9">
+										<div class="mb-10">
+											<p style="color: #655E7A; font-size:30px;"><b>{{tutorial.firstname}} {{tutorial.lastname}}</b></p>
+											<p style="font-size:20px;"><b>{{tutorial.affiliation}}</b></p>
+											{% if tutorial.title %}
+											<p style="font-size:18px;"><b>D&I Talk Title: {{tutorial.title}}</b></p>
+											{% endif %}
+										</div>
+									</div>
+									<div style="padding-bottom:50px;" class="col-md-12">
+										{% if tutorial.abstract %}
+										<p><b>Abstract</b></p>
+										<p align = "justify">{{tutorial.abstract}}</p>
+										{% endif %}
+										{% if tutorial.biography %}
+										<p><b>Biography</b></p>
+										<p align = "justify">{{tutorial.biography}}</p>
+										{% endif %}
+										<hr>
+										</div>
+								</div>
+							</div>
+							{% endfor %}
+
             
           </div>
         </div>
