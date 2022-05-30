@@ -1,5 +1,5 @@
 start_date: "27.06.2022"
-duration: 4
+duration: 3
 start_time: "08:30"
 end_time: "17:00"
 slot_duration: "00:15"
@@ -84,7 +84,11 @@ dates:
     day: 0
     type: "posters"
     name: "Demos"
-    text: ""
+  
+  - start_slot: 34
+    duration_slot: 1
+    day: 0
+    type: "empty"
 
   # 2nd day
   - start_slot: 0
