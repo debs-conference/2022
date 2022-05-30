@@ -24,14 +24,14 @@ dates:
     duration_slot: 2
     day: 0
     type: "ceremony"
-    text: "Opening Ceremony"
+    text: "Opening Ceremony and Awards Cerimony"
 
   - start_slot: 4
     duration_slot: 4
     day: 0
     type: "tutorial"
     name: "Tutorial"
-    text: "Unifying Model ... 1"
+    text: "A Unifying Model for Distributed Data-Intensive Systems Part 1"
     authors: ""
     chair: ""
     doi: ""
@@ -46,7 +46,7 @@ dates:
     day: 0
     type: "tutorial"
     name: "Tutorial"
-    text: "Unifying Model ... 2"
+    text: "A Unifying Model for Distributed Data-Intensive Systems Part 2"
     authors: ""
     chair: ""
     doi: ""
@@ -83,8 +83,8 @@ dates:
     duration_slot: 6
     day: 0
     type: "posters"
-    name: "Demo"
-    text: "(with short presentation round + breakout rooms)"
+    name: "Demos"
+    text: ""
 
   # 2nd day
   - start_slot: 0
@@ -139,16 +139,22 @@ dates:
     type: "break"
 
   - start_slot: 24
-    duration_slot: 6
+    duration_slot: 4
     day: 1
-    type: ""  # phd forum / talk??
-    text: "Ph.D. forum / talk"
+    type: ""
+    text: "D&I talk"
+  
+  - start_slot: 28
+    duration_slot: 2
+    day: 1
+    type: ""
+    text: "Ph.D. Forum"
 
   - start_slot: 30
     duration_slot: 7
     day: 1
     type: "" # 3min pre for all
-    text: "3 minuutes presentations for all entries"
+    text: "3 minutes presentations for all entries"
 
   - start_slot: 37
     duration_slot: # ??
@@ -183,7 +189,7 @@ dates:
     duration_slot: 2
     day: 2
     type: ""  # sponsor session
-    text: "Session from sponsors"
+    text: "Invited Industry Talk"
 
   - start_slot: 14
     duration_slot: 4
@@ -205,7 +211,7 @@ dates:
     duration_slot: 3
     day: 2
     type: "tutorial"
-    name: "Tutotrial"
+    name: "Tutorial"
 
   - start_slot: 30
     duration_slot: 4
@@ -284,5 +290,5 @@ dates:
   - start_slot: 26
     duration_slot: 4
     day: 3
-    type: ""  # business meeting
-    text: "business meeting and closing remarks"
+    type: ""
+    text: "Business meeting and closing remarks"
