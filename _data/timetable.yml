@@ -24,7 +24,7 @@ dates:
     duration_slot: 2
     day: 0
     type: "ceremony"
-    text: "Opening Ceremony and Awards Cerimony"
+    text: "Opening Ceremony and Awards Ceremony"
 
   - start_slot: 4
     duration_slot: 4
