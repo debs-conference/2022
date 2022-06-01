@@ -90,6 +90,11 @@ dates:
     day: 0
     type: "break"
 
+  - start_slot: 35
+    duration_slot: 4
+    day: 0
+    type: "empty"
+
   # 2nd day
   - start_slot: 0
     duration_slot: 2
