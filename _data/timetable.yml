@@ -1,7 +1,7 @@
 start_date: "27.06.2022"
 duration: 3
 start_time: "08:30"
-end_time: "17:00"
+end_time: "18:00"
 slot_duration: "00:15"
 show_url: true
 default_text:
@@ -86,7 +86,7 @@ dates:
     text: "with short presentation round + breakout rooms"
   
   - start_slot: 32
-    duration_slot: 2
+    duration_slot: 3
     day: 0
     type: "break"
 
@@ -171,9 +171,14 @@ dates:
     text: "B"
 
   - start_slot: 33
-    duration_slot: 1
+    duration_slot: 2
     day: 1
     type: "break"
+
+  - start_slot: 36
+    duration_slot: 3
+    day: 1
+    text: "Reception and Posters (17:30 - 19:00)"
 
   # 3rd day
   - start_slot: 0
@@ -237,9 +242,14 @@ dates:
     keynote_index: "1"
 
   - start_slot: 32
-    duration_slot: 2
+    duration_slot: 3
     day: 2
     type: "break"
+
+  - start_slot: 38
+    duration_slot: 1
+    day: 2
+    text: "Excursion and Banquet (18:00 - 22:00)"
 
   # 4th day
   - start_slot: 0
@@ -309,3 +319,8 @@ dates:
     day: 3
     type: ""
     text: "Business meeting and closing remarks"
+  
+  - start_slot: 33
+    duration_slot: 2
+    day: 3
+    type: "empty"
