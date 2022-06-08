@@ -79,19 +79,19 @@ dates:
     type: "break"
   
   - start_slot: 28
-    duration_slot: 4
+    duration_slot: 5
     day: 0
     type: "demo"
-    name: "Demo"
-    text: "with short presentation round + breakout rooms"
+    name: ""
+    text: "Demo and Ph.D. forum"
   
-  - start_slot: 32
-    duration_slot: 3
+  - start_slot: 33
+    duration_slot: 1
     day: 0
     type: "break"
 
-  - start_slot: 35
-    duration_slot: 4
+  - start_slot: 34
+    duration_slot: 5
     day: 0
     type: "empty"
 
@@ -176,12 +176,12 @@ dates:
     text: "B"
 
   - start_slot: 33
-    duration_slot: 2
+    duration_slot: 1
     day: 1
     type: "break"
   
-  - start_slot: 35
-    duration_slot: 1
+  - start_slot: 34
+    duration_slot: 2
     day: 1
     type: "empty"
 
@@ -197,7 +197,7 @@ dates:
     type: "reg"
 
   - start_slot: 2
-    duration_slot: 4
+    duration_slot: 5
     day: 2
     type: "tutorial"
     name: "Tutorial"
@@ -205,25 +205,19 @@ dates:
     speaker: 
       name: "Alessandro Margara"
 
-  - start_slot: 6
+  - start_slot: 7
     duration_slot: 2
     day: 2
     type: "break"
 
-  - start_slot: 8
-    duration_slot: 4
+  - start_slot: 9
+    duration_slot: 5
     day: 2
     type: "toturial"
     name: "Tutorial"
     text: "A Unifying Model for Distributed Data-Intensive Systems Part 2"
     speaker: 
       name: "Alessandro Margara"
-
-  - start_slot: 12
-    duration_slot: 2
-    day: 2
-    type: ""
-    name: "Ph.D. forum"
 
   - start_slot: 14
     duration_slot: 4
@@ -252,12 +246,12 @@ dates:
     keynote_index: "1"
 
   - start_slot: 32
-    duration_slot: 3
+    duration_slot: 2
     day: 2
     type: "break"
   
-  - start_slot: 35
-    duration_slot: 3
+  - start_slot: 34
+    duration_slot: 4
     day: 2
     type: "empty"
 
@@ -331,12 +325,12 @@ dates:
     type: "break"
   
   - start_slot: 29
-    duration_slot: 4
+    duration_slot: 3
     day: 3
     type: ""
     text: "Business meeting and closing remarks"
   
-  - start_slot: 33
-    duration_slot: 6
+  - start_slot: 32
+    duration_slot: 7
     day: 3
     type: "empty"
