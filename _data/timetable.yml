@@ -82,8 +82,7 @@ dates:
     duration_slot: 5
     day: 0
     type: "demo"
-    name: ""
-    text: "Demo and Ph.D. forum"
+    name: "Demo and Ph.D. forum"
   
   - start_slot: 33
     duration_slot: 1
@@ -325,12 +324,12 @@ dates:
     type: "break"
   
   - start_slot: 29
-    duration_slot: 3
+    duration_slot: 4
     day: 3
     type: ""
     text: "Business meeting and closing remarks"
   
-  - start_slot: 32
-    duration_slot: 7
+  - start_slot: 33
+    duration_slot: 6
     day: 3
     type: "empty"
