@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-<meta name="description" content="Industry speakers">
+<meta name="description" content="Panel speakers">
 <meta name="author" content="Sardar">
 
 <link rel="icon" href="https://2022.debs.org/img/favicon.ico">
@@ -77,38 +77,38 @@
 							</div>
 							
 							<div class="col-md-12" style="padding-top: 50px"></div>
-							{% for industry in site.data.industry %}
-							<div id="{{industry.lastname}}" class="col-md-12" style="margin-top: -100px; padding-top: 100px">
+							{% for panel in site.data.panel %}
+							<div id="{{panel.lastname}}" class="col-md-12" style="margin-top: -100px; padding-top: 100px">
 								<div>
 						
 									<div class="col-md-9">
 										<div class="mb-10">
-											<p style="color: #655E7A; font-size:30px;"><b>{{industry.firstname}} {{industry.lastname}}</b></p>
-											{% if industry.affiliation_img != nil %}
-											<img src={{industry.affiliation_img}} width=50% height="auto" style="margin-bottom: 25px">
+											<p style="color: #655E7A; font-size:30px;"><b>{{panel.firstname}} {{panel.lastname}}</b></p>
+											{% if panel.affiliation_img != nil %}
+											<img src={{panel.affiliation_img}} width=50% height="auto" style="margin-bottom: 25px">
 											{% endif %}
 
                       
-                      {% if industry.affiliation_img0 != nil %}
-                        <img src={{industry.affiliation_img0}} width=25% height="auto" style="margin-bottom: 25px">
-                        <img src={{industry.affiliation_img1}} width=25% height="auto" style="margin-bottom: 25px">
-                        <img src={{industry.affiliation_img2}} width=25% height="auto" style="margin-bottom: 25px">
+                      {% if panel.affiliation_img0 != nil %}
+                        <img src={{panel.affiliation_img0}} width=25% height="auto" style="margin-bottom: 25px">
+                        <img src={{panel.affiliation_img1}} width=25% height="auto" style="margin-bottom: 25px">
+                        <img src={{panel.affiliation_img2}} width=25% height="auto" style="margin-bottom: 25px">
                       {% endif %} 
                       
-											{% if industry.title %}
-											<p style="font-size:18px;"><b>Talk Title: {{industry.title}}</b></p>
+											{% if panel.title %}
+											<p style="font-size:18px;"><b>Talk Title: {{panel.title}}</b></p>
 											{% endif %}
 										</div>
 									</div>
 
 									<div style="padding-bottom:50px;" class="col-md-12">
-										{% if industry.abstract %}
+										{% if panel.abstract %}
 										<p><b>Abstract</b></p>
-										<p align = "justify">{{industry.abstract}}</p>
+										<p align = "justify">{{panel.abstract}}</p>
 										{% endif %}
-										{% if industry.biography %}
+										{% if panel.biography %}
 										<p><b>Biography</b></p>
-										<p align = "justify">{{industry.biography}}</p>
+										<p align = "justify">{{panel.biography}}</p>
 										{% endif %}
 										<hr>
 										</div>
