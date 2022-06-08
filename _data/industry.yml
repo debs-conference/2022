@@ -1,25 +1,13 @@
-- firstname: Dimitrios
-  lastname: Georgakopoulos
-  title: Advances in Industry 4.0 and the Industrial Internet of Things
-  affiliation_img: /img/keynotes/dimitrios.jpg
-  abstract: |-
-    
-  biography: Prof. Dimitrios Georgakopoulos is the Director of Swinburne University of Technology’s Key IoT Lab and Industry 4.0 Program Leader. Before that he was Research Director at CSIRO’s ICT Centre and Professor at RMIT. Dimitrios has also held research and management positions in several industrial labs in the USA, including Telcordia Technologies (where he helped found Telcordia’s research laboratories in Austin, Texas and Poznan, Poland), Microelectronics and Computer Corporation, GTE (now Verizon) Laboratories, and Bell Communications Research. Dimitrios has authored 200 articles, and his publications have received approximately 20,000 citations. He is ranked by Microsoft Academic as one of the Top Authors in the fields of the Internet of Things (2013-2022), Context Awareness (1990-2021), Middleware (1990-2021), and Workflow (1993-2002). According to Elsevier’s Science-wide author databases of standardized citation indicators (August 2021 data update), I am in the 2% of top-cited authors (top 1%, if self-citations are not considered). He has led major multidisciplinary research initiatives in digital manufacturing, precision agriculture, human services, water management, and defense; won more than twenty research awards; and attracted significant personal research funding ($60.5M+) from both industry and government in the USA, EU, and Australia.
-    
+- firstname: Yingjun
+  lastname: Wu
+  title: "RisingWave: A Distributed SQL Streaming Database Designed for the Cloud"
+  image: /img/industry/YingjunWu.png
+  affiliation: "Founder and CEO at Singularity Data"
+  affiliation_img: /img/industry/SingularityData.png
+
+  abstract: "In this talk, I will present RisingWave, a distributed SQL streaming database designed for the cloud. RisingWave provides standard SQL as the interactive interface. It speaks in PostgreSQL dialect, and can be seamlessly integrated with the PostgreSQL ecosystem with no code change. RisingWave treats streams as tables and allows users to compose complex queries over streaming and historical data declaratively. RisingWave is designed for the cloud. The cloud-native architecture enables RisingWave to scale compute and storage resources separately and infinitely based on the users’ demands. We open-sourced RisingWave kernel under Apache License 2.0. Together with the open community, we are on the mission to democratize stream processing: to make stream processing simple, affordable, and accessible for everyone."
+
+  biography: "Yingjun Wu is the founder and CEO of Singularity Data, a startup innovating next-generation cloud-native database systems. Before starting his adventure, Yingjun was a software engineer at the Redshift team, Amazon Web Services, and a researcher at the Database group, IBM Almaden Research Center. Yingjun received his PhD degree from National University of Singapore, where he was affiliated with the Database Group (advisor: Kian-Lee Tan). He was also a visiting PhD at the Database Group, Carnegie Mellon University (advisor: Andrew Pavlo). Yingjun Wu is passionate about integrating research into real-world system products. During his time at AWS, Yingjun was responsible for boosting Amazon Redshift performance using advanced vectorization and compression techniques. Before that, he participated in the development of IBM Db2 Event Store’s indexing structure and transaction processing mechanism. Yingjun was an early contributor to Stratosphere, which is now widely known as Apache Flink. Yingjun is also active in academia. He is serving as a Program Committee member in several top-tier database conferences, such as SIGMOD, VLDB, and ICDE."
+
   paper:
-    doi: 
-
-
-- firstname: Antoine Amarilli, Christophe Claramunt, and Demetris Zeinalipour
-  lastname: 
-  title: Climate Change and Computing Facts, Perspectives and an Open Discussion
-  affiliation_img0: /img/keynotes/amarilli.jpg
-  affiliation_img1: /img/keynotes/claramunt.jpg
-  affiliation_img2: /img/keynotes/zeinalipour.jpg
-  abstract: "The rise of temperatures on Earth have alerted communities around the globe to devise immediate solutions to help curb the severe effects of Climate Change, which is attributed to greenhouse gas emissions caused by human activities. Even though the Computing field is a cause of emissions in its own right, it also has the potential to increase the efficiency of human workflows in all sectors, such as transportation, buildings, energy & heat production, industry, agriculture and livestock, etc. In this panel discussion, we start out with a general overview of terminology, factors, metrics, and objectives related to climate change, and then survey: (i) Green Conferences; (ii) Green Mobility; (iii) Green Cities and (iv) Green Smart Spaces. The participants are expected to bring into the discussion their own perspectives from the academic, governmental, and industrial sector to report on how they perceive the future of the Computing Field in a future shaped by Climate Change, and how we can all help achieve the goals of the Paris Agreement."
-    
-  biography: "Antoine Amarilli is Associate Professor in Computer Science at Télécom Paris in the DIG team.  His research topics focus on data management and theoretical computer science. He is a maintainer of the TCS4F initiative on the climate crisis and of the 'No free view? No review!' manifesto on open access to scientific publications. Christophe Claramunt is a professor in computer science at the French Naval Academy. His research is oriented towards theoretical, pluri-disciplinary and practical aspects of geographical information science (GIS). His main research interests are oriented to environmental, maritime and and urban GISs. He has long contributed to the development of computing and GIS systems in developping countries and actively orientates his research on the development of green and environmental friendly computing applications. Demetrios Zeinalipour-Yazti is an Associate Professor of Computer Science at the University of Cyprus. His primary research interests include Data Management in Computer Systems and Networks. He actively engages in activities to help curbing the climate crisis, including research and practice on green planning systems for self-consumption of renewable energy and development of virtual conference and tourism platforms to tackle the climate/COVID-19/energy crisis."
-    
-  paper:
-    doi: 
-
+    doi:
