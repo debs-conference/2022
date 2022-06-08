@@ -1,9 +1,9 @@
 - firstname: Ioana
   lastname: Manolescu
-  title: What do the Sources Say? Integrating Highly Heterogeneous Journalistic Data Sources
+  title: "Teasing journalistic findings out of heterogeneous sources: a data/AI journey"
   affiliation: Inria and LIX/Ecole Polytechnique
   image: /img/keynotes/ioana.jpg
-  abstract: |-
+  abstract: "Freedom of the press is under threat worldwide, and the quality of information that people have access to is dangerously degraded, under the joint threat of non-democratic governments and fake information propagation. The press as an industry needs powerful data management tools to help them interpret the complex reality surrounding us. Since 2018, I have been cooperating with journalists from Le Monde, France’s leading newspaper, in devising tools for analyzing large and heterogeneuos data sources that they are interested in. This research has been embodied in ConnectionLens, a graph ETL tool capable of ingesting heterogeneous data sources into a graph, enriched (with the help of ML methods) with entities extracted from data of any type. On such integrated graphs, we devised novel algorithms for keyword search, and combine them in more recent research with structured querying. The talk describes the architecture and main algorithmic challenges in building and exploiting ConnectionLens graphs, illustrated in particular on an application where we study conflicts of interest in the biomedical domain. This is joint work with A. Anadiotis, O. Balalau, H. Galhardas and many others. ConnectionLens Web site (papers+code): https://team.inria.fr/cedar/connectionlens/. This research has been funded by Agence Nationale de la Recherche AI Chair SourcesSay (https://sourcessay.inria.fr)."
     
   biography: |-
     
