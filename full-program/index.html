@@ -124,7 +124,7 @@ div.selectTimezone{
 	.break { background-color:aliceblue; }
 	.lunch { background-color:antiquewhite; }
 	.empty { background-color: white; }
-	.ceremony { background-color:palegreen; }
+	.ceremony { background-color:mistyrose; }
 	.keynote { background-color: darkorange; }
 	.panel { background-color: cornflowerblue; }
 	.research { background-color: mediumorchid; }
@@ -245,6 +245,11 @@ div.selectTimezone{
 										{% assign industry_index = date[0].industry_index %}
 										{% assign industry = site.data.industry[industry_index] %}
 										{% assign default_text = industry.firstname | append: " " | append: industry.lastname %}
+									{% endif %}
+									{% if date[0].type == "tutorial" %}
+										{% assign tutorial_index = date[0].tutorial_index %}
+										{% assign tutorial = site.data.tutorials[tutorial_index] %}
+										{% assign default_text = tutorial.firstname | append: " " | append: tutorial.lastname %}
 									{% endif %}
 									
 									<td rowspan="{{date[0].duration_slot}}" class="timetablecell {{date[0].type}}"><a href="#{{date[0].type}}_{{day}}_{{date[0].start_slot}}" class="timetablelink">{% if date[0].name != nil %}{{date[0].name}}{% if date[0].text != nil or default_text!=nil %}: {% endif %}{% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</a></td>
