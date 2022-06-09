@@ -109,7 +109,7 @@ dates:
   - start_slot: 5
     duration_slot: 1
     day: 1
-    tytpe: "break"
+    type: "break"
 
   - start_slot: 6
     duration_slot: 3
