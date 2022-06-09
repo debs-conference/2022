@@ -213,7 +213,7 @@ dates:
   - start_slot: 9
     duration_slot: 5
     day: 2
-    type: "toturial"
+    type: "tutorial"
     name: "Tutorial"
     text: "A Unifying Model for Distributed Data-Intensive Systems Part 2"
     speaker: 
