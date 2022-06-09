@@ -354,11 +354,8 @@ div.selectTimezone{
 												{% if paper.speaker != nil %}<br/><b>Speaker</b>: {{paper.speaker.name}}<br/><b>Bio</b>: {{paper.speaker.bio}}{% endif %}
 											</p>
 
-										{% elsif date[0].type == "tutorial" and date[0].authors != nil %}
-											<p>
-												{{ date[0].authors }}
-											</p>
-
+										{% elsif date[0].type == "tutorial" %}
+											
 											{% if date[0].name != nil %}
 											<p>
 												<a href="/tutorial-speakers/#{{tutorial.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}{{ tutorial.title }}
