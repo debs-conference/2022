@@ -72,6 +72,10 @@ dates:
     day: 0
     type: "tutorial"
     name: "Tutorial"
+    text: "Formal Models of Complex Event Recognition"
+    speaker: 
+      name: "Alexander Artikis"
+    tutorial_index: 1
 
   - start_slot: 27
     duration_slot: 1
@@ -172,7 +176,10 @@ dates:
     day: 1
     type: "tutorial"
     name: "Tutorial"
-    text: "B"
+    text: "Hopsworks Feature Store"
+    speaker: 
+      name: "Jim Dowling"
+    tutorial_index: 2
 
   - start_slot: 33
     duration_slot: 1
@@ -204,6 +211,7 @@ dates:
     text: "A Unifying Model for Distributed Data-Intensive Systems Part 1"
     speaker: 
       name: "Alessandro Margara"
+    tutorial_index: 0
 
   - start_slot: 7
     duration_slot: 2
@@ -275,6 +283,7 @@ dates:
     text: "Apache Wayang (Incubating): Performing AIoT Seamlessly"
     speaker: 
       name: "Jorge Arnulfo Quiane Ruiz"
+    tutorial_index: 3
 
   - start_slot: 5
     duration_slot: 2
