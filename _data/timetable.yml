@@ -146,7 +146,7 @@ dates:
     day: 1
     type: "keynote"
     name: "Keynote"
-    text: "What do the Sources Say? Integrating Highly Heterogeneous Journalistic Data Sources"
+    text: "Teasing journalistic findings out of heterogeneous sources: a data/AI journey"
     speaker: 
       name: "Ioana Manolescu"
     keynote_index: 0

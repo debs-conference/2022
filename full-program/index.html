@@ -365,15 +365,6 @@ div.selectTimezone{
 												{% if site.data.timetable.show_url and date[0].doi != nil %}<a href = {{date[0].doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
 											</p>
 
-											{% if date[0].parts != nil %}
-											<div>
-											{% for part in date[0].parts %}
-												<h4>{{part.title}}</h4>
-												{% if part.youtube != nil %}<a href = {{part.youtube}} target = _blank><img style = width:6% src = /img/youtubeIcon.png></a>{% endif %}
-											{% endfor %}
-											</div>
-											{% endif %}
-										
 										{% elsif date[0].papers != nil %}
 											{% for paper in date[0].papers %}
 										    <h4 style="margin-top: 40px"><b>{{ paper.title }}</b></h4>
