@@ -11,3 +11,17 @@
 
   paper:
     doi:
+
+- firstname: Madalina 
+  lastname: Ciortan
+  title: "The Industrial Challenges of Evolving Graph Networks"
+  image: /img/industry/madalina.jpg
+  affiliation: "Head of the Data Science Department at Euranova"
+
+  abstract: "Large network data evolving over time have become ubiquitous across most industries,  ranging from automotive and pharma to e-commerce and banking. Despite recent efforts, using temporal graph neural networks on continuously changing data in an effective and scalable way has been a challenge. This talk presents one of the research tracks studied at Euranova. We provide an overview of relevant continual learning methods directly applicable to real-world use cases. As explainability has become the central ingredient in trustworthy AI, we introduce the landscape of state-of-the-art methods designed for explaining node, link or graph level predictions."
+
+  biography: "Madalina Ciortan is the head of the data science department at Euranova.
+After graduating as an engineer, a master in computer science and a postmaster in bioinformatics, she earned a doctorate in data science. She has over 15 years of experience in roles ranging from development, architecture, team leading, coaching and research. She worked on topics including computer vision, NLP, time series analysis, unsupervised analysis, self-supervised learning, as well as high dimensional and noisy data analysis in the industry."
+
+  paper:
+    doi:
