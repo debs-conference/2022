@@ -326,10 +326,16 @@ div.selectTimezone{
 										
 										{% if date[0].type == "keynote" %}
 										
-											{% if date[0].name != nil %}<p><a href="/keynote-speakers/#{{keynote.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}
-										{{ keynote.title }}</p>
+											{% if date[0].name != nil %}
+											<p>
+												<a href="/keynote-speakers/#{{keynote.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}{{ keynote.title }}
+											</p>
+
 											{% if keynote.paper != nil %}
-												<p>Corresponding paper: {{ keynote.paper.title }} from <i>{{ keynote.paper.authors }}</i></p>
+												<p>
+													Corresponding paper: {{ keynote.paper.title }} from <i>{{ keynote.paper.authors }}</i>
+												</p>
+
 												<p>
 													{% if keynote.paper.youtube != nil %}<a href = {{keynote.paper.youtube}} target = _blank><img style = width:6% src = /img/youtubeIcon.png></a>{% endif %}
 													{% if site.data.timetable.show_url and keynote.paper.doi != nil %}<a href = {{keynote.paper.doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
@@ -338,15 +344,29 @@ div.selectTimezone{
 										
 										{% elsif date[0].type == "industry" and date[0].industry_index != nil %}
 										
-											{% if date[0].name != nil %}<p><a href="/industry-speakers/#{{industry.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}
-											{{ industry.title }}</p>
+											{% if date[0].name != nil %}
 											<p>
-													{% if site.data.timetable.show_url and industry.paper.doi != nil %}<a href = {{industry.paper.doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
-													{% if paper.speaker != nil %}<br/><b>Speaker</b>: {{paper.speaker.name}}<br/><b>Bio</b>: {{paper.speaker.bio}}{% endif %}
-												</p>
+												<a href="/industry-speakers/#{{industry.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}{{ industry.title }}
+											</p>
+
+											<p>
+												{% if site.data.timetable.show_url and industry.paper.doi != nil %}<a href = {{industry.paper.doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
+												{% if paper.speaker != nil %}<br/><b>Speaker</b>: {{paper.speaker.name}}<br/><b>Bio</b>: {{paper.speaker.bio}}{% endif %}
+											</p>
+
 										{% elsif date[0].type == "tutorial" and date[0].authors != nil %}
-											<p>{{ date[0].authors }}</p>
-											<p>{% if site.data.timetable.show_url and date[0].doi != nil %}<a href = {{date[0].doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}</p>
+											<p>
+												{{ date[0].authors }}
+											</p>
+
+											{% if date[0].name != nil %}
+											<p>
+												<a href="/tutorials/#{{tutorial.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}{{ tutorial.title }}
+											</p>
+
+											<p>
+												{% if site.data.timetable.show_url and date[0].doi != nil %}<a href = {{date[0].doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
+											</p>
 
 											{% if date[0].parts != nil %}
 											<div>
