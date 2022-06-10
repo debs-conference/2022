@@ -25,3 +25,16 @@ After graduating as an engineer, a master in computer science and a postmaster i
 
   paper:
     doi:
+
+- firstname: Anna Almén, 
+  lastname: Almén
+  title: "The Value and Challenge of Real Time Market Data: be careful what you are asking for"
+  image: /img/industry/anna.jpg
+  affiliation: Chief Technology Officer at Infront Financial Technology GmbH
+
+  abstract: "Across our business and personal lives, we’re used to getting information in real-time. How many stops until my parcel arrives? Where’s my Uber? Is it faster for me to walk or take the bus? Are there any new videos to watch? We all carry super-computers in our pockets with instant access to all the streaming data we want, customised to our personal preferences. Naturally, financial services professionals in brokerage, trading, and wealth management expect their market data to be real-time as well, allowing them to make split second decisions to buy and sell. But real time market data is hard to provide with sufficient Quality of Information (QoI) and Quality of Service (QoS). It’s massive, constant, and complex. And most days, real-time is much more than people need, even if it is what they ask for. We’ll look at what the real business drivers are for going real-time, when delayed or daily is better, and how to balance the market data needs against the wants."
+
+  biography: "Anna Almén – CTO, joined Infront, a leading European provider of information and technology solutions, in March 2022. Anna has extensive experience in integrating companies based on a data-driven approach leading to more efficient organisations. Anna Almén has held various positions in the Swedish financial technology sector as well as working with startup organisations going through exponential growth. Most recently, she held the position of CTO of eCommerce at Worldline following the merger with the startup company Bambora where she had a key role in the technology leadership. She has also worked for many years for companies in the trading segment including Nasdaq OMX. Anna Almén earned her Master’s Degree in Computer Science at KTH Royal Institute of Technology."
+
+  paper:
+    doi:
