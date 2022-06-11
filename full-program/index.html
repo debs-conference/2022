@@ -179,7 +179,7 @@ div.selectTimezone{
           </div>
 					
 					<div class="selectTimezone">
-						<b>Choose the time zone:</b> <select id="sel" onload="show(this)" onchange="show(this)">
+						<b>Choose the time zone:</b> <select id="sel" onchange="show(this)">
 							<script src="/js/timezone.min.js"></script>
 						</select>
 					</div>
@@ -221,7 +221,7 @@ div.selectTimezone{
 								{% for counter in (0..rows) %}
 								<tr>
 									{%   assign current = offset | times: counter | times: 60 | plus: start_s    %}
-									<td class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} EDT</td>
+									<td class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} CEST</td>
 									
 									{% for day in (0..site.data.timetable.duration) %}
 									{% assign current_day_events = site.data.timetable.dates | where:"day", day %}
