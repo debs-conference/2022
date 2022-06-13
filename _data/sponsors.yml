@@ -1,4 +1,8 @@
 silver_sponsors:
+  - name: KU
+    link: https://www.ku.dk/english/
+    logo: /img/clients/ku.png
+    sidebar: true
   - name: Euranova
     link: https://euranova.eu/
     logo: /img/clients/clients-logo5.png
