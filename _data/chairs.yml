@@ -306,6 +306,17 @@ diversity_chairs:
       institution: University of Pittsburgh
 
 
+diversity_members: 
+    - firstname: Rakan A. 
+      lastname: Alseghayer
+      institution: University of Pittsburgh
+    - firstname: Brian T. 
+      lastname: Nixon
+      institution: University of Pittsburgh
+    - firstname: Xiaozhong
+      lastname: Zhang
+      institution: University of Pittsburgh
+
 publicity_chairs: 
     - firstname: Zsolt 
       lastname: István
