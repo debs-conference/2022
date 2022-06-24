@@ -1,0 +1,436 @@
+---
+# this is an empty front matter
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+<meta name="description" content="Full program (tentative)">
+<meta name="author" content="Sardar">
+
+
+<link rel="icon" href="https://2022.debs.org/img/favicon.ico">
+
+
+<title>FULL PROGRAM (tentative)</title>
+
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+    <link rel="stylesheet" href="https://2022.debs.org/css/owl.carousel.css" />
+    <link rel="stylesheet" href="https://2022.debs.org/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://2022.debs.org/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://2022.debs.org/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://2022.debs.org/css/animate.css" />
+    <link rel="stylesheet" href="https://2022.debs.org/css/syntax.css" />
+    <link rel="stylesheet" href="https://2022.debs.org/css/venobox.css" />
+<!-- Main Stylesheet -->
+
+<link rel="stylesheet" href="https://2022.debs.org/css/style.min.css" integrity="" media="screen">
+
+
+
+<script src="https://2022.debs.org/js/jquery-1.10.2.min.js"></script>
+<script src="https://2022.debs.org/js/bootstrap.min.js"></script>
+<script src="https://2022.debs.org/js/owl.carousel.min.js"></script>
+<script src="https://2022.debs.org/js/plugins.js"></script>
+<script src="https://2022.debs.org/js/venobox.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://2022.debs.org/js/main.min.js"></script>
+
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script>
+	
+<script>
+$(document).ready(function(){
+  
+  $("#change").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 1px;
+}
+
+.left {
+  width: 2%;
+  height: 60px;
+  margin-top:60px;
+  margin-left: 10px;
+}
+
+.middle {
+  width: 1%;
+  margin-top:60px;
+}
+
+.right {
+  width: 90%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.selectTimezone{
+  margin-top:35px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+</style>
+
+<style>
+	td.timetablecell { cursor:pointer; }
+	
+	.reg { background-color: gainsboro; }
+	.break { background-color:aliceblue; }
+	.lunch { background-color:antiquewhite; }
+	.empty { background-color: white; }
+	.ceremony { background-color:mistyrose; }
+	.keynote { background-color: darkorange; }
+	.panel { background-color: cornflowerblue; }
+	.research { background-color: mediumorchid; }
+	.tutorial { background-color: lightgreen; }
+	.demo { background-color: lavender; }
+	.dinner { background-color:lightsteelblue; }
+	.grand { background-color:yellow; }
+	.talk { background-color: aquamarine; }
+	.industry { background-color: #ABB2B9; }
+	.business { background-color:mintcream; }
+
+	a.timetablelink { color: black }
+</style>
+
+<script>
+	$( document ).ready(function() {
+		$('.timetablecell').on("click", function() {
+			;
+			$('html, body').animate({
+					scrollTop: ($($(this).find('a.timetablelink').attr('href')).offset().top)
+			},500);
+		});
+	});
+	
+</script>
+
+</head>
+<body>
+
+{% include header.html show_logo=1 %}
+		
+<section id="global-header" style="background-position: center; background-image: url('../img/copenhagen/COLOURBOX53648947.jpg'),url('../img/copenhagen/COLOURBOX53648947.jpg');">
+  <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>FULL PROGRAM (tentative)</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id = "full-program">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div id="change">
+            <h1>DEBS 2022 Full Program (tentative)</h1>
+          </div>
+					
+					<div class="selectTimezone">
+						<b>Choose the time zone:</b> <select id="sel" onchange="show(this)">
+							<script src="/js/timezone.min.js"></script>
+						</select>
+					</div>
+					<div style="margin-bottom:70px; overflow-x:auto;">
+						<table class="table table-bordered table-hover text-center">
+							<thead class="bg-gray">
+								<tr>
+									<th style="width:15%;" class="text-center">Time</th>
+									
+									{%   assign start_day = site.data.timetable.start_date | date: '%s'      %}
+									{%   assign offset_day = 86400      %}
+								
+									
+									{% for day in (0..site.data.timetable.duration) %}
+										{%   assign total_offset_day = offset_day | times: day            %}
+										{%   assign current_day = start_day | plus: total_offset_day      %}
+										<th style="width:17%;" class="text-center">{{current_day | date: '%b %d, %Y'}}</th>
+									{% endfor %}
+								</tr>
+							</thead>
+							<tbody>
+								{%   assign start_h = site.data.timetable.start_time | date: '%k'      %}
+								{%   assign start_m = site.data.timetable.start_time | date: '%M'      %}
+								{%   assign start = start_h | times: 60 | plus: start_m      %}
+								
+								{%   assign offset_h = site.data.timetable.slot_duration | date: '%k' %}
+								{%   assign offset_m = site.data.timetable.slot_duration | date: '%M'  %}
+								{%   assign offset = offset_h | times: 60 | plus: offset_m      %}
+								
+								{%   assign end_h = site.data.timetable.end_time | date: '%k' %}
+								{%   assign end_m = site.data.timetable.end_time | date: '%M'  %}
+								{%   assign end = end_h | times: 60 | plus: end_m      %}
+								
+								{%   assign rows = end | minus: start %}
+								{%   assign rows = rows | divided_by: offset %}
+								
+								{%   assign start_s = site.data.timetable.start_time | date: '%s'      %}
+								
+								{% for counter in (0..rows) %}
+								<tr>
+									{%   assign current = offset | times: counter | times: 60 | plus: start_s    %}
+									<td class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} CEST</td>
+									
+									{% for day in (0..site.data.timetable.duration) %}
+									{% assign current_day_events = site.data.timetable.dates | where:"day", day %}
+									
+									{% assign date = current_day_events | where:"start_slot", counter %}
+									{% assign date_size = date | size %}
+									{% if date_size > 0 %}
+									
+									{% assign default_text = site.data.timetable.default_text | where:"type", date[0].type %}
+									{% assign default_text = default_text[0].text %}
+									{% if date[0].type == "keynote" %}
+										{% assign keynote_index = date[0].keynote_index %}
+										{% assign keynote = site.data.keynotes[keynote_index] %}
+										{% assign default_text = keynote.firstname | append: " " | append: keynote.lastname %}
+									{% endif %}
+									{% if date[0].type == "industry" and date[0].industry_index != nil %}
+										{% assign industry_index = date[0].industry_index %}
+										{% assign industry = site.data.industry[industry_index] %}
+										{% assign default_text = industry.firstname | append: " " | append: industry.lastname %}
+									{% endif %}
+									{% if date[0].type == "tutorial" %}
+										{% assign tutorial_index = date[0].tutorial_index %}
+										{% assign tutorial = site.data.tutorials[tutorial_index] %}
+										{% assign default_text = tutorial.firstname | append: " " | append: tutorial.lastname %}
+									{% endif %}
+									
+									<td rowspan="{{date[0].duration_slot}}" class="timetablecell {{date[0].type}}"><a href="#{{date[0].type}}_{{day}}_{{date[0].start_slot}}" class="timetablelink">{% if date[0].name != nil %}{{date[0].name}}{% if date[0].text != nil or default_text!=nil %}: {% endif %}{% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</a></td>
+									{% endif %}
+									
+									{% endfor %}
+									
+								</tr>
+								{% endfor %}
+								
+							</tbody>
+						</table>
+						<hr>
+						
+						<div>
+              <h1 style="margin:0px;">Session Details</h1>
+            </div>
+            
+            
+						{%   assign start_day = site.data.timetable.start_date | date: '%s'      %}
+						{%   assign offset_day = 86400      %}
+						
+						{% for day in (0..site.data.timetable.duration) %}
+						
+							{%   assign total_offset_day = offset_day | times: day            %}
+							{%   assign current_day = start_day | plus: total_offset_day      %}
+						
+						<div>
+              <h2 style="margin-top: 30px">{{current_day | date: '%b %d, %Y'}}</h2>
+            </div>
+
+							{% assign current_day_events = site.data.timetable.dates | where:"day", day %}
+							{% for counter in (0..rows) %}
+								{% assign current = offset | times: counter | times: 60 | plus: start_s    %}
+
+
+								{% assign date = current_day_events | where:"start_slot", counter %}
+								{% assign date_size = date | size %}
+								{% if date_size > 0 %}
+								{% if date[0].type != "break" and date[0].type != "lunch" and date[0].type != "empty" %}
+								{% if date[0].hide == nil %}
+
+								{% assign default_text = site.data.timetable.default_text | where:"type", date[0].type %}
+								{% assign default_text = default_text[0].text %}
+								{% if date[0].type == "keynote" %}
+									{% assign keynote_index = date[0].keynote_index %}
+									{% assign keynote = site.data.keynotes[keynote_index] %}
+									{% assign default_text = keynote.firstname | append: " " | append: keynote.lastname %}
+								{% endif %}
+								{% if date[0].type == "industry" and date[0].industry_index != nil %}
+									{% assign industry_index = date[0].industry_index %}
+									{% assign industry = site.data.industry[industry_index] %}
+									{% assign default_text = industry.firstname | append: " " | append: industry.lastname %}
+								{% endif %}
+						                {% if date[0].type == "tutorial" and date[0].tutorial_index != nil %}
+									{% assign tutorial_index = date[0].tutorial_index %}
+									{% assign tutorial = site.data.tutorials[tutorial_index] %}
+									{% assign default_text = tutorial.firstname | append: " " | append: tutorial.lastname %}
+								{% endif %}
+
+								<div id="{{date[0].type}}_{{day}}_{{date[0].start_slot}}">
+
+								</div>
+								<div class="row">
+									<div class="column left {{date[0].type}}">
+
+									</div>
+									<div class="column middle">
+
+									</div>
+									<div class="column right">
+										<h3>{% if date[0].name != nil %}{{date[0].name}}{% if date[0].text != nil or default_text!=nil %}: {% endif %}{% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %} <p>(<i class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} EDT</i> ) {% if date[0].chair != nil %} <br/> Chair: {{date[0].chair}} {% endif %} <!--<a href="#change">Change the time zone!</a>--></p></h3>
+
+										
+										{% if date[0].type == "keynote" %}
+										
+											{% if date[0].name != nil %}
+											<p>
+												<a href="/keynote-speakers/#{{keynote.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}{{ keynote.title }}
+											</p>
+
+											{% if keynote.paper != nil %}
+												<p>
+													Corresponding paper: {{ keynote.paper.title }} from <i>{{ keynote.paper.authors }}</i>
+												</p>
+
+												<p>
+													{% if keynote.paper.youtube != nil %}<a href = {{keynote.paper.youtube}} target = _blank><img style = width:6% src = /img/youtubeIcon.png></a>{% endif %}
+													{% if site.data.timetable.show_url and keynote.paper.doi != nil %}<a href = {{keynote.paper.doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
+												</p>
+											{% endif %}
+										
+										{% elsif date[0].type == "industry" and date[0].industry_index != nil %}
+										
+											{% if date[0].name != nil %}
+											<p>
+												<a href="/industry-speakers/#{{industry.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}{{ industry.title }}
+											</p>
+
+											<p>
+												{% if site.data.timetable.show_url and industry.paper.doi != nil %}<a href = {{industry.paper.doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
+												{% if paper.speaker != nil %}<br/><b>Speaker</b>: {{paper.speaker.name}}<br/><b>Bio</b>: {{paper.speaker.bio}}{% endif %}
+											</p>
+
+										{% elsif date[0].type == "tutorial" %}
+											
+											{% if date[0].name != nil %}
+											<p>
+												<a href="/tutorial-speakers/#{{tutorial.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}{{ tutorial.title }}
+											</p>
+
+											<p>
+												{% if site.data.timetable.show_url and date[0].doi != nil %}<a href = {{date[0].doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
+											</p>
+
+										{% elsif date[0].papers != nil %}
+											{% for paper in date[0].papers %}
+										    <h4 style="margin-top: 40px"><b>{{ paper.title }}</b></h4>
+												<p>{{ paper.authors }}</p>
+
+												<p>
+													{% if paper.youtube != nil %}<a href = {{paper.youtube}} target = _blank><img style = width:6% src = /img/youtubeIcon.png></a>{% endif %}
+													{% if site.data.timetable.show_url and paper.doi != nil %}<a href = {{paper.doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
+													{% if paper.pdf != nil %}<a href = {{paper.pdf}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}
+													{% if paper.speaker != nil %}<br/><b>Speaker</b>: {{paper.speaker.name}}<br/><b>Bio</b>: {{paper.speaker.bio}}{% endif %}
+												</p>
+<!--												{% if paper.abstract != nil %}<p><b>Abstract:</b> {{ paper.abstract }}{% endif %}</p> -->
+											{% endfor %}
+										{% else %}
+											{% if date[0].name != nil %}<p><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b>{% endif %}
+										{% endif %}
+										
+										<!--<a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404088 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=SW_WS6ULsdY&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a> <a href = https://github.com/vincenzo-gulisano/debs2022_tutorial_event_time target = _blank><img style = width:5% src = /img/githubIcon.png></a>-->
+
+									</div>
+								</div>
+
+								{% endif %}
+								{% endif %}
+								{% endif %}
+
+							{% endfor %}
+
+						{% endfor %}
+						
+						
+					</div>
+				</div>
+			</div>
+      
+      {% include side.html %}
+			
+
+    </div>
+  </div>
+</section>
+	
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+          </ul>
+        </div>
+        <ul class="list-inline mb-20">
+          <li class="list-inline-item">Follow us:</li>
+          
+          <li class="list-inline-item"><a href="https://twitter.com/ACM_DEBS"><i class="fa fa-twitter"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.facebook.com/ACM.DEBS"><i class="fa fa-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.linkedin.com/groups/4747505/"><i class="fa fa-linkedin"></i></a></li>
+          
+        </ul>
+        <p><center>Copyright &copy; 2022 All rights reserved | ÉTS</center></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+	
+</body>
+</html>
